@@ -26,6 +26,7 @@ Ler conforme a tarefa:
 - Google Search: `references/google-search.md`;
 - Performance Max: `references/google-pmax.md`;
 - Reel, vídeo narrado, lettering, cartela ou copy do criativo: `references/meta-reels-creative.md`;
+- iteração de copy com dados de campanha: `references/performance-iteration.md`;
 - revisão do método ou evolução da skill: `references/acceptance-tests.md`.
 
 Não carregar referência de plataforma ou produto sem relação com o pedido.
@@ -44,6 +45,7 @@ Identificar:
 - informação já visível, falada ou obrigatória;
 - criação, revisão, comparação ou adaptação;
 - banco do gerenciador, copy do criativo ou ambos.
+- em iteração com dados, métrica decisória, período, volume de exposição, conversões e identificação dos assets comparados.
 
 Não misturar limites do gerenciador com limites de lettering, roteiro ou cartela.
 
@@ -71,6 +73,8 @@ Usar fonte inferior para complementar, nunca para contradizer. Diante de conflit
 Quando um fato necessário não estiver no material atual, procurar primeiro em `catolicasc.org.br`. Se a informação não aparecer em fonte oficial atual, solicitar o dado; não completar com memória, concorrentes ou página agregadora.
 
 Não armazenar campanha vigente dentro da skill. Tratar planejamentos e PDFs estratégicos como contexto, não como comprovação automática de promessa, benefício ou condição comercial.
+
+Usar dados de campanha para priorizar hipóteses de copy, nunca para comprovar modalidade, oferta, benefício ou resultado individual. Manter fatos do produto e evidência de performance como trilhas separadas.
 
 ### 3. Roteirizar o produto
 
@@ -111,6 +115,8 @@ Em bancos com cinco ou mais variações, buscar pelo menos três hipóteses reai
 
 Planejar internamente a função dominante de cada asset. Não expor o mapa, salvo solicitação.
 
+Quando houver resultados anteriores, carregar `references/performance-iteration.md`. Priorizar evidências comparáveis da própria conta, sem abandonar uma faixa de exploração para hipóteses novas.
+
 ### 6. Redigir para o sistema de combinação
 
 Escrever cada asset para funcionar sozinho e em combinações plausíveis. Não presumir pareamento por índice quando a plataforma puder recombinar campos.
@@ -147,6 +153,14 @@ Para comparação:
 - explicitar critérios;
 - usar `mais apta ao teste` ou formulação equivalente antes da veiculação;
 - chamar uma opção de melhor para performance apenas quando dados comparáveis sustentarem a conclusão.
+
+Para iteração com dados:
+
+- definir a métrica coerente com o objetivo antes de comparar;
+- verificar período, exposição, público, formato, destino e demais diferenças que afetem comparabilidade;
+- distinguir conceito, execução e campo antes de atribuir o resultado à copy;
+- criar variações que estendam sinais promissores, corrijam um problema observável e preservem exploração;
+- declarar limitações quando os dados permitirem apenas uma leitura descritiva.
 
 ### 8. Validar e entregar
 

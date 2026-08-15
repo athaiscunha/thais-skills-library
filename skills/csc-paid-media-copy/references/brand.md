@@ -57,3 +57,13 @@ Mencionar a marca quando ela:
 - diferenciar de forma sustentada.
 
 Não ocupar vários assets com o nome da instituição apenas para preencher o banco.
+
+## Contexto compartilhado
+
+Quando houver um documento institucional ou de marketing compartilhado e identificado como atual, lê-lo antes de pedir novamente informações duráveis sobre público, voz, diferenciais, terminologia e provas.
+
+- Verificar data, versão e histórico de alterações quando existirem.
+- Tratar esse contexto como referência durável, não como comprovação automática de oferta, turma, calendário ou outra condição temporal.
+- Preservar linguagem real de alunos, leads ou equipe somente quando houver fonte rastreável; não apresentar paráfrase como fala literal.
+- Aplicar a hierarquia do `SKILL.md` quando o contexto compartilhado divergir do pedido ou da campanha atual.
+- Não alterar o documento compartilhado durante uma tarefa de copy sem solicitação explícita.

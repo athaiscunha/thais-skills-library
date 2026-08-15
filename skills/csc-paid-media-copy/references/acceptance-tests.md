@@ -89,3 +89,23 @@ Aprovar somente se o script:
 - falhar na linha acima do limite;
 - detectar a duplicação normalizada;
 - sair com código diferente de zero.
+
+## L | Iteração com dados comparáveis
+
+Dado um conjunto identificado de assets da mesma campanha, com período, exposição, conversões e métrica decisória, aprovar somente se a skill:
+
+- separar padrões observados de explicações hipotéticas;
+- distinguir conceito, execução e campo;
+- estender ao menos um sinal promissor sem produzir apenas paráfrases;
+- preservar uma hipótese exploratória sustentada;
+- devolver copy pronta e validada, não apenas análise.
+
+## M | Dados insuficientes ou incomparáveis
+
+Dado um ranking sem volume de exposição, ou assets de públicos, ofertas e formatos diferentes, aprovar somente se a skill:
+
+- não declarar vencedor nem causalidade;
+- nomear a limitação relevante;
+- usar os dados apenas como pista descritiva;
+- pedir somente o dado que mudaria materialmente a próxima rodada;
+- continuar por um caminho seguro quando houver fatos suficientes para criar copy.

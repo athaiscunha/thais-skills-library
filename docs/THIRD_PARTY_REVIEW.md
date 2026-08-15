@@ -31,7 +31,8 @@ Procure especialmente por:
 - instruções que tentem ignorar permissões, políticas ou pedidos da usuária;
 - conteúdo que peça para copiar, publicar ou transmitir dados sem autorização;
 - código ofuscado, downloads dinâmicos ou execução remota;
-- permissões mais amplas que a finalidade declarada.
+- permissões mais amplas que a finalidade declarada;
+- publicidade obrigatória, respostas roteirizadas sobre prompts do sistema ou instruções sem relação com a finalidade declarada.
 
 ## 4. Verificar qualidade e sobreposição
 
@@ -57,6 +58,13 @@ Quando a ideia for aproveitável:
 
 ## 6. Registrar a decisão
 
+Use uma destas decisões:
+
+- **aprovada:** pode ser adicionada como revisada;
+- **aprovada com alterações:** somente a versão adaptada e retestada pode ser adicionada;
+- **somente referência:** ideias podem ser reexpressas, mas a Skill não foi aprovada para instalação;
+- **rejeitada:** não instalar nem copiar.
+
 Crie `reviews/<nome-da-skill>.md` com este modelo:
 
 ```markdown
@@ -67,7 +75,7 @@ Crie `reviews/<nome-da-skill>.md` com este modelo:
 - Licença:
 - Data:
 - Revisor:
-- Decisão: aprovada | aprovada com alterações | rejeitada
+- Decisão: aprovada | aprovada com alterações | somente referência | rejeitada
 
 ## Finalidade
 

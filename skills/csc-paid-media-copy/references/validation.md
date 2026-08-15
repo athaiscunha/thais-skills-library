@@ -7,6 +7,7 @@
 - Limites, volume e marca
 - Hipóteses e especificidade
 - Recombinação e criativo
+- Evidência de performance
 - Saída
 
 Executar antes de entregar qualquer banco.
@@ -105,6 +106,19 @@ Rejeitar combinação que:
 - contradiga o visual ou a modalidade.
 
 Na descrição única de Meta, preferir informação universal e pouco saturada. Em Search, testar também três títulos juntos. Em PMax, fazer título longo sobreviver sem descrição.
+
+## Evidência de performance
+
+Aplicar quando a entrega usar resultados de campanha para gerar ou revisar copy.
+
+- Definir a métrica principal conforme o objetivo da campanha.
+- Confirmar período, exposição, conversões e identificação dos assets.
+- Verificar diferenças de público, verba, posicionamento, formato, destino e oferta antes de comparar.
+- Separar observação, hipótese e conclusão sustentada.
+- Não atribuir causalidade à copy quando outros elementos variaram.
+- Não declarar vencedor com amostra insuficiente ou dados incomparáveis.
+- Fazer cada aprendizado apontar para uma decisão de copy: estender, corrigir, explorar ou suspender julgamento.
+- Não transformar o resultado de um anúncio em promessa publicitária.
 
 ## Qualidade da conclusão
 
