@@ -15,12 +15,14 @@ As Skills instaladas localmente são cópias de trabalho. A versão oficial é s
 │   ├── THIRD_PARTY_REVIEW.md
 │   └── VERSIONING.md
 ├── reviews/
-│   └── README.md
+│   ├── README.md
+│   └── <nome-da-skill>.md
 └── skills/
-    └── README.md
+    ├── README.md
+    └── <nome-da-skill>/
 ```
 
-Cada Skill aprovada ficará em:
+Cada Skill aprovada fica em:
 
 ```text
 skills/<nome-da-skill>/
@@ -50,6 +52,8 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 - Convenções de commits e versões: [docs/VERSIONING.md](docs/VERSIONING.md)
 - Avaliação de Skills externas: [docs/THIRD_PARTY_REVIEW.md](docs/THIRD_PARTY_REVIEW.md)
 
-## Estado inicial
+## Skills disponíveis
 
-A biblioteca começa vazia de propósito. Nenhuma Skill de terceiros foi adicionada. As primeiras Skills só serão incluídas depois de definição de escopo, revisão e teste.
+- [`csc-paid-media-copy`](skills/csc-paid-media-copy/): criação, revisão e validação de copy de mídia paga da Católica SC para Meta Ads, Google Search e Performance Max.
+
+Nenhuma Skill de terceiros está instalada. Ideias externas só entram depois de revisão, seleção e reescrita para o nosso contexto.

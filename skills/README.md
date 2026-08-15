@@ -2,7 +2,11 @@
 
 Este diretório contém somente Skills revisadas e prontas para uso.
 
-No estado inicial, ele não contém nenhuma Skill executável.
+## Catálogo
+
+| Skill | Versão | Origem | Finalidade |
+|---|---:|---|---|
+| [`csc-paid-media-copy`](csc-paid-media-copy/) | 0.2.0 | criação própria | Copy de mídia paga da Católica SC para Meta Ads, Google Search e Performance Max |
 
 ## Convenção de pastas
 
