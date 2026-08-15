@@ -15,10 +15,12 @@
 
 Usar somente quando forem relevantes e confirmados para o anúncio:
 
-- unidades em Joinville e Jaraguá do Sul;
+- campi em Joinville e Jaraguá do Sul, sem inferir ou declarar a quantidade total de unidades;
 - tradição de ensino e raízes maristas;
 - credenciamento institucional pelo MEC;
 - experiência docente, infraestrutura ou metodologia quando sustentadas pela página atual ou pelo briefing.
+
+Consultar a página institucional atual antes de usar quantidade de unidades, campi, cursos, estudantes, egressos, professores, anos de experiência, dimensões ou endereços. Não congelar esses números nesta referência.
 
 Não criar superlativos como `a melhor`, `líder` ou `número 1`. Não converter tradição, credenciamento ou infraestrutura em garantia de emprego, salário ou resultado profissional.
 
@@ -66,4 +68,5 @@ Quando houver um documento institucional ou de marketing compartilhado e identif
 - Tratar esse contexto como referência durável, não como comprovação automática de oferta, turma, calendário ou outra condição temporal.
 - Preservar linguagem real de alunos, leads ou equipe somente quando houver fonte rastreável; não apresentar paráfrase como fala literal.
 - Aplicar a hierarquia do `SKILL.md` quando o contexto compartilhado divergir do pedido ou da campanha atual.
+- Consultar a página oficial relevante em `catolicasc.org.br` em toda tarefa, ainda que o contexto compartilhado pareça completo.
 - Não alterar o documento compartilhado durante uma tarefa de copy sem solicitação explícita.

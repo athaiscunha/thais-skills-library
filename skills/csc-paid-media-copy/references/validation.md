@@ -16,6 +16,8 @@ Executar antes de entregar qualquer banco.
 
 Confirmar:
 
+- consulta da página oficial mais específica e relevante em `catolicasc.org.br` durante a tarefa;
+- registro interno da URL e da data de consulta;
 - nome, modalidade, carga, local, conteúdo, oferta, data, prazo e CTA;
 - origem de cada alegação material;
 - vigência de mote, desconto e urgência;
@@ -23,6 +25,8 @@ Confirmar:
 - ausência de garantia individual baseada em dado geral.
 
 Aplicar a hierarquia do `SKILL.md`. Não publicar afirmação relevante em dúvida. Considerar dado explícito atual da usuária superior a documento anterior.
+
+Mesmo quando o briefing estiver completo, comparar os fatos materiais com o site. Diante de divergência pública, suspender a alegação conflitante e informar a necessidade de reconciliação. Se o site estiver indisponível, não declarar atualidade e não liberar fato volátil para publicação.
 
 Não usar como fato publicitário:
 

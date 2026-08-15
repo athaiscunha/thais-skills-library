@@ -19,6 +19,8 @@ Ler sempre:
 - `references/writing-quality.md` para arquitetura e qualidade;
 - `references/validation.md` antes da entrega.
 
+Quando `csc-marketing-context` estiver disponível, usá-la para consolidar documentos, contexto e fontes antes de redigir. A consulta atual ao site continua obrigatória; o contexto compartilhado não a substitui.
+
 Ler conforme a tarefa:
 
 - Pós-Graduação: `references/product-pos.md`;
@@ -59,6 +61,8 @@ Extrair somente fatos confirmados sobre:
 - professores, provas e diferenciais;
 - oferta, regra, vigência e CTA.
 
+Consultar sempre a página oficial mais específica e relevante em `catolicasc.org.br` antes da entrega final, mesmo quando o briefing ou os documentos parecerem completos. Registrar internamente URL e data da consulta e comparar os fatos materiais. Começar pela página do produto, curso ou campanha; consultar FAQ, edital, ato ou página institucional quando a alegação exigir.
+
 Aplicar esta prioridade quando as fontes divergirem:
 
 1. correção ou dado explícito fornecido pela usuária no pedido atual;
@@ -70,7 +74,11 @@ Aplicar esta prioridade quando as fontes divergirem:
 
 Usar fonte inferior para complementar, nunca para contradizer. Diante de conflito de mesma prioridade em nome, modalidade, oferta, valor, data, turma ou local, suspender apenas o dado conflitante e pedir confirmação.
 
-Quando um fato necessário não estiver no material atual, procurar primeiro em `catolicasc.org.br`. Se a informação não aparecer em fonte oficial atual, solicitar o dado; não completar com memória, concorrentes ou página agregadora.
+Mesmo quando a hierarquia indicar um documento vigente, não ocultar divergência material com a página pública atual. Em comunicação pública, suspender a alegação conflitante até reconciliar as fontes. Ausência de um fato em uma fonte não é contradição.
+
+Quando um fato necessário não estiver no material atual, procurar primeiro em `catolicasc.org.br`. Se a informação não aparecer em fonte oficial atual, solicitar o dado; não completar com memória, concorrentes ou página agregadora. Não usar snippet, cache ou blog antigo como substituto da página atual.
+
+Se o site não puder ser consultado, avançar somente por caminho seguro, marcar a saída como rascunho sem validação de atualidade e evitar fatos voláteis. Não afirmar que a copy está atualizada.
 
 Não armazenar campanha vigente dentro da skill. Tratar planejamentos e PDFs estratégicos como contexto, não como comprovação automática de promessa, benefício ou condição comercial.
 

@@ -109,3 +109,13 @@ Dado um ranking sem volume de exposição, ou assets de públicos, ofertas e for
 - usar os dados apenas como pista descritiva;
 - pedir somente o dado que mudaria materialmente a próxima rodada;
 - continuar por um caminho seguro quando houver fatos suficientes para criar copy.
+
+## N | Briefing completo e site obrigatório
+
+Dado um briefing com todos os campos necessários, aprovar somente se a skill:
+
+- consultar a página oficial mais específica em `catolicasc.org.br`;
+- registrar internamente URL e data;
+- comparar nome, modalidade, oferta, vigência, local e CTA;
+- não esconder divergência entre documento e página pública;
+- marcar a saída como rascunho sem validação de atualidade se o site estiver indisponível.
