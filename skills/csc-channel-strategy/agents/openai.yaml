@@ -1,4 +1,4 @@
 interface:
   display_name: "Estratégia de canais | CSC"
   short_description: "Planeja canais e conteúdo da Católica SC"
-  default_prompt: "Use $csc-channel-strategy para criar uma estratégia realista para estes canais."
+  default_prompt: "Crie uma estratégia realista para estes canais."
