@@ -1,4 +1,4 @@
 interface:
   display_name: "Blog SEO | CSC"
   short_description: "Pesquisa e escreve artigos SEO da CSC"
-  default_prompt: "Use $csc-seo-blog para pesquisar, estruturar e escrever este artigo."
+  default_prompt: "Pesquise, estruture e escreva este artigo."
