@@ -1,10 +1,10 @@
 # Thais Skills Library
 
-Repositório privado que funciona como **fonte de verdade** para as Skills pessoais e compartilhadas usadas nas duas máquinas.
+Repositório público que funciona como **fonte de verdade** para as Skills pessoais e compartilhadas usadas nas duas máquinas.
 
 As Skills instaladas localmente são cópias de trabalho. A versão oficial é sempre a que está neste repositório, na branch `main`.
 
-As sete Skills também são distribuídas juntas pelo plugin privado **Biblioteca de Skills da Thais**. Na segunda máquina, basta pedir ao Codex para instalar o plugin deste repositório; veja [docs/INSTALLATION.md](docs/INSTALLATION.md).
+As sete Skills também são distribuídas juntas pelo plugin **Biblioteca de Skills da Thais**. Para instalar ou atualizar o pacote em outra máquina, veja [docs/INSTALLATION.md](docs/INSTALLATION.md).
 
 ## Estrutura
 
@@ -61,6 +61,14 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 8. Documentos fornecidos são fontes formais, e `catolicasc.org.br` deve ser consultado em toda tarefa da Católica SC.
 9. Informações temporais não devem ser congeladas como regras permanentes.
 10. Toda mudança de comportamento deve passar pela validação estática e pelos casos de avaliação proporcionais ao risco.
+
+## Como usar
+
+Depois que o plugin estiver instalado e carregado na superfície compatível, as Skills podem ser acionadas automaticamente pelo pedido ou selecionadas explicitamente.
+
+- No ChatGPT, selecione a Skill pelo menu de `@` quando ela estiver disponível nessa superfície.
+- No Codex, use `$nome-da-skill`, por exemplo `$csc-paid-media-copy`.
+- Ao chamar apenas o plugin, o modelo pode escolher uma Skill interna por roteamento semântico, mas a seleção explícita é preferível quando você quer garantir qual Skill será usada.
 
 ## Começar
 
