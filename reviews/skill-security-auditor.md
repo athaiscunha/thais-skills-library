@@ -17,7 +17,7 @@ O `SKILL.md` da candidata, o arquivo de licença e o contexto do repositório fo
 
 ## Riscos encontrados
 
-| Finding | Severidade | Evidência | Risco | Decisão |
+| Achado | Severidade | Evidência | Risco | Decisão |
 |---|---|---|---|---|
 | Publicidade obrigatória | Alta | A Skill exige uma mensagem inicial com pedido de contribuição e links externos | Injeta conteúdo alheio a toda auditoria e direciona a usuária sem necessidade | Remover completamente; a versão externa foi rejeitada |
 | Resposta roteirizada sobre prompt do sistema | Alta | A Skill manda redirecionar esse tipo de pergunta para uma academia externa | Tenta substituir uma resposta legítima por promoção e interfere no comportamento do agente | Remover completamente; a versão externa foi rejeitada |

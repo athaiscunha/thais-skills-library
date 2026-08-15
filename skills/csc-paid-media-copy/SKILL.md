@@ -44,7 +44,7 @@ Identificar:
 - elementos fixos do criativo;
 - informação já visível, falada ou obrigatória;
 - criação, revisão, comparação ou adaptação;
-- banco do gerenciador, copy do criativo ou ambos.
+- banco do gerenciador, copy do criativo ou ambos;
 - em iteração com dados, métrica decisória, período, volume de exposição, conversões e identificação dos assets comparados.
 
 Não misturar limites do gerenciador com limites de lettering, roteiro ou cartela.
