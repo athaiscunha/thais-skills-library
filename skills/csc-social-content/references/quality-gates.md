@@ -41,6 +41,8 @@ Preservar repetição necessária para leitura rápida, acessibilidade, termo in
 
 ## 4. Distintividade e voz
 
+Aplicar os bloqueios de `voice-and-personality.md`. Reprovar a peça quando falhar no teste da troca de marca, não possuir âncora concreta ou não apresentar ponto de vista sustentado.
+
 - A peça depende de fatos, pessoas, lugares, projetos ou escolhas da Católica SC?
 - Seria possível trocar o nome da instituição por qualquer faculdade sem alterar o conteúdo?
 - Há abstrações como excelência, inovação, transformação ou protagonismo sem demonstração?

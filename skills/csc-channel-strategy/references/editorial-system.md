@@ -23,14 +23,18 @@ Manter para cada editoria:
 | objetivo | mudança de percepção, conhecimento ou ação |
 | público | para quem e em qual situação |
 | promessa | o que um episódio entrega de modo reconhecível |
+| ponto de vista | leitura recorrente que diferencia a editoria |
 | matéria-prima | pessoas, perguntas, fatos, espaços, acervo ou dados |
 | invariantes | o que precisa permanecer |
 | variações | o que pode mudar sem descaracterizar |
+| assinatura | recurso verbal, narrativo ou visual com função reconhecível |
+| antíteses | clichês, tons e execuções que descaracterizam ou tornam genérico |
 | formatos | principal e alternativas justificadas |
 | capacidade | captação, apuração, design, aprovação e prazo |
 | riscos | repetição, exposição, direitos, estereótipo ou saturação |
 | sinais | evidências fornecidas para manter, ajustar ou pausar |
 | episódios | amostra recente, tema e data para evitar duplicação |
+| calibração | exemplos aprovados, revisados e rejeitados com motivo |
 
 Frequência não é identidade. Definir cadência pela disponibilidade de matéria-prima e pela capacidade de criar episódios distintos.
 
@@ -69,12 +73,16 @@ Exigir:
 - vínculo com objetivo e público;
 - matéria-prima recorrente real;
 - promessa distinta;
+- ponto de vista que não possa ser transferido intacto a qualquer instituição;
+- assinatura com função, sem depender de gíria, bordão ou formato fixo;
 - variação suficiente para não esgotar rapidamente;
 - produção compatível com a equipe;
 - critério para selecionar pautas;
 - critério para pausar, mudar ou encerrar.
 
 Não criar nova editoria apenas para organizar visualmente o calendário. Antes, verificar se uma já existente comporta a pauta sem perder clareza.
+
+Aplicar o teste da troca de marca à definição. Se outra instituição puder executar a mesma promessa com a mesma matéria-prima e linguagem, a editoria ainda é um tema ou formato genérico; aprofundar o ponto de vista antes de colocá-la no calendário.
 
 ## Governar episódios
 

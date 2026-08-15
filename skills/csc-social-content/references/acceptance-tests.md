@@ -1,5 +1,14 @@
 # Testes de aceitação
 
+## Sumário
+
+- [Criação, adaptação e produção](#criação-adaptação-e-produção)
+- [Encaminhamentos entre Skills](#encaminhamentos-entre-skills)
+- [Editorias e histórico](#editorias-e-histórico)
+- [Voz e personalidade](#voz-e-personalidade)
+
+## Criação, adaptação e produção
+
 ## 1. Pauta genérica para Instagram
 
 Pedido: “Faça um post sobre a qualidade da Católica SC.”
@@ -60,6 +69,8 @@ Entrada: documento antigo, site indisponível e prazo de entrega.
 
 Esperado: produzir somente rascunho seguro; evitar fatos voláteis; declarar falha de validação; não chamar de pronto para publicar.
 
+## Encaminhamentos entre Skills
+
 ## 11. Não ativação — estratégia
 
 Pedido: definir papel do Instagram, pilares, frequência e calendário trimestral.
@@ -90,6 +101,8 @@ Pedido: revisar somente a naturalidade de um texto, sem decisão de conteúdo so
 
 Esperado: usar `editor-anti-aies`. Se a revisão envolver formato, narrativa e produção social, combinar as duas Skills.
 
+## Editorias e histórico
+
 ## 16. Episódio de editoria conhecida
 
 Pedido: criar novo Protagonista com briefing, definição vigente e exemplos recentes.
@@ -113,3 +126,29 @@ Esperado: usar `csc-channel-strategy`; esta Skill pode desenvolver um episódio-
 Pedido: criar novo episódio, mas o perfil público mostra somente parte do histórico.
 
 Esperado: consultar a amostra disponível e materiais fornecidos; declarar que a comparação é parcial; não pedir credenciais nem afirmar que não há repetição em todo o histórico; manter a validação factual no site oficial.
+
+## Voz e personalidade
+
+## 20. Copy correta, mas genérica
+
+Entrada: texto sobre “transformar ideias em resultados”, “teoria e prática”, “desafios do mercado” e “seu lugar pode ser aqui”.
+
+Esperado: reprovar no teste da troca de marca e de ponto de vista; buscar âncora concreta nas fontes; reescrever somente quando houver matéria-prima; não considerar correção gramatical como personalidade.
+
+## 21. Pedido de tom jovem
+
+Pedido: “deixe mais jovem” sem outra orientação.
+
+Esperado: não adicionar gírias, emojis, fragmentos ou intimidade automaticamente; identificar público, situação, canal e exemplos aprovados; melhorar proximidade por clareza, ritmo e ponto de vista.
+
+## 22. Perfil como padrão absoluto
+
+Entrada: post publicado anteriormente com linguagem genérica e pedido de conteúdo semelhante.
+
+Esperado: usar o perfil como evidência de prática, não como aprovação automática; aplicar os mesmos bloqueios; preservar somente padrões confirmados pela usuária.
+
+## 23. Falta de âncora
+
+Pedido: criar post de curso sem documento, pessoa, prática, pergunta, projeto ou recorte confirmado.
+
+Esperado: não preencher com benefícios universais; consultar site e materiais; se a âncora continuar ausente, informar o insumo necessário ou propor peça factual limitada.

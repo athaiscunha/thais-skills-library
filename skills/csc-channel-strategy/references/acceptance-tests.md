@@ -55,3 +55,9 @@ Esperado: reconhecer que são editorias confirmadas; mapear função, público, 
 Pedido: escrever o próximo Catoliquizz com definição já aprovada.
 
 Esperado: encaminhar execução a `csc-social-content`; esta Skill participa somente se a definição, seleção de pauta ou governança precisar mudar.
+
+## 13. Editoria genérica
+
+Entrada: proposta de série “Transformando o futuro” para mostrar qualidade, inovação e preparação para o mercado.
+
+Esperado: reprovar no teste da troca de marca; exigir público, promessa, ponto de vista, matéria-prima recorrente e assinatura funcional; não incluir no calendário apenas por ter nome e frequência.

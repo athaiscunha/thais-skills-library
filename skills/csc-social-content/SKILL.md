@@ -16,6 +16,7 @@ Não conectar contas, APIs, plataformas de publicação, analytics ou ferramenta
 Ler sempre:
 
 - `references/editorial-decisions.md` para decidir trabalho editorial, ângulo e formato;
+- `references/voice-and-personality.md` para bloquear conteúdo genérico e calibrar as camadas de voz;
 - `references/quality-gates.md` para validar a entrega.
 
 Ler conforme a tarefa:
@@ -87,7 +88,19 @@ Aplicar `editorial-decisions.md` para decidir:
 
 Não usar Reel, carrossel ou trend por costume. Se uma página, atualização de conteúdo existente, resposta direta, Story simples ou ausência de publicação resolver melhor, dizer isso.
 
-### 4. Construir a arquitetura
+### 4. Passar pelo bloqueio de personalidade
+
+Aplicar `voice-and-personality.md` antes de escrever. Fixar:
+
+- âncora concreta;
+- ponto de vista;
+- situação reconhecível pelo público;
+- camada de voz institucional, de canal, de editoria e da peça;
+- escolha verbal, narrativa ou visual que dê identidade sem forçar informalidade.
+
+Reprovar o ângulo se a peça puder receber o nome de qualquer faculdade sem mudança material, se depender apenas de benefício abstrato ou se usar gíria, emoji e frase de efeito como substitutos de personalidade. Reconstruir uma vez com a matéria-prima disponível. Se continuar genérica, não redigir preenchimento: declarar qual âncora ou decisão falta.
+
+### 5. Construir a arquitetura
 
 Antes da redação final, definir:
 
@@ -100,9 +113,11 @@ Dimensionar cards, cenas e Stories pelas unidades narrativas necessárias. Não 
 
 Em editoria recorrente, preservar os invariantes que permitem reconhecimento e variar pauta, pessoa, evidência, abertura e execução o suficiente para que o episódio acrescente algo. Não repetir uma estrutura vazia apenas para manter frequência.
 
-### 5. Redigir para o formato
+### 6. Redigir para o formato
 
 Aplicar `format-playbooks.md`.
+
+Preservar o ponto de vista e as camadas de voz definidas em `voice-and-personality.md` durante toda a peça.
 
 - Fazer título, texto na peça, fala, legenda e CTA cumprirem funções complementares.
 - Escrever para leitura e compreensão reais, não para preencher um template.
@@ -113,7 +128,7 @@ Aplicar `format-playbooks.md`.
 
 Quando a peça derivar de outra fonte, aplicar `repurposing-and-adaptation.md`. Não transformar subtítulos do artigo em cards nem repetir o mesmo resumo em canais diferentes.
 
-### 6. Especificar a produção
+### 7. Especificar a produção
 
 Aplicar `production-and-accessibility.md` para tornar a ideia executável. Informar somente o que muda a produção:
 
@@ -126,7 +141,7 @@ Aplicar `production-and-accessibility.md` para tornar a ideia executável. Infor
 
 Não pressupor acesso a estudante, professor, laboratório, campus, material de arquivo ou áudio. Se a melhor ideia depender de recurso ausente, apresentar uma adaptação realista.
 
-### 7. Escrever legenda e CTA
+### 8. Escrever legenda e CTA
 
 Fazer a legenda acrescentar contexto, prova, nuance, serviço ou próximo passo. Não recontar card por card ou transcrever o vídeo sem necessidade de acessibilidade.
 
@@ -140,15 +155,15 @@ Escolher CTA proporcional à intenção:
 
 Não incluir hashtags por reflexo. Usá-las somente quando solicitadas ou justificadas pelo contexto, sem prometer alcance.
 
-### 8. Revisar em passes
+### 9. Revisar em passes
 
 Aplicar `quality-gates.md` nesta ordem:
 
 1. fonte, fato e atualidade;
 2. objetivo, ideia central e aderência ao público;
-3. progressão e redundância entre unidades;
-4. continuidade com editorias e conteúdos recentes, quando aplicável;
-5. distintividade da Católica SC;
+3. bloqueio de personalidade e teste da troca de marca;
+4. progressão e redundância entre unidades;
+5. continuidade com editorias e conteúdos recentes, quando aplicável;
 6. adequação ao formato e ao canal;
 7. viabilidade de produção;
 8. acessibilidade, autorização e risco;
@@ -160,7 +175,7 @@ Usar `editor-anti-aies` no último passe, preservando a função de leitura ráp
 
 Adaptar ao pedido. Na ausência de formato, entregar:
 
-1. `Decisão editorial`: objetivo, público, trabalho editorial, ideia central, ângulo, formato e justificativa curta;
+1. `Decisão editorial`: objetivo, público, trabalho editorial, ideia central, ângulo, âncora concreta, ponto de vista, formato e justificativa curta;
 2. `Fontes e status`: páginas e documentos consultados, fatos temporais, conflitos e pendências relevantes;
 3. `Conceito`: abertura, progressão e fechamento;
 4. `Conteúdo`: texto completo por card, cena, quadro ou Story;
@@ -189,4 +204,5 @@ Em pedido simples, omitir bastidores decisórios e entregar a peça pronta mais 
 - Não inventar dado, pessoa, cena, depoimento, aprovação ou material disponível.
 - Não usar concorrentes ou exemplos externos para completar fatos da Católica SC.
 - Não copiar formato distintivo, texto ou execução de criador; adaptar somente mecânicas genéricas com autoria e risco considerados.
+- Não usar gíria, emoji, bordão, intimidade artificial ou frase de efeito como substitutos de ponto de vista e matéria-prima.
 - Não considerar uma peça pronta quando falta validação factual, direito de uso ou insumo essencial de produção.
