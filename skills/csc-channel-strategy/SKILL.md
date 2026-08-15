@@ -23,7 +23,7 @@ Ler quando o escopo incluir redes sociais:
 - `references/social-planning.md`;
 - `references/editorial-system.md` para criar, mapear ou governar pilares, editorias e séries recorrentes.
 
-Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
+Ler `references/handoff.md` ao receber contexto estruturado ou encaminhar brief para execução. Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
 
 Usar `csc-marketing-context` como base factual e de voz. Em toda tarefa da Católica SC, consultar a página mais específica e atual de `catolicasc.org.br`, ainda que os documentos pareçam completos.
 
@@ -167,7 +167,7 @@ Usar tabela apenas quando ela facilitar comparação. Não transformar toda a es
 ## Encaminhamento para outras Skills
 
 - usar `csc-trends-radar` para identificar oportunidades atuais;
-- usar `csc-social-content` para executar publicações e episódios de editorias recorrentes;
+- usar `csc-social-content` para executar publicações e episódios de editorias recorrentes; ao encaminhar, emitir o `social_content_brief` completo definido em `references/handoff.md`, mantendo campos ausentes como pendências explícitas;
 - usar `csc-seo-blog` para pesquisar e escrever artigos;
 - usar `csc-paid-media-copy` para ativos de mídia paga;
 - usar `editor-anti-aies` para o acabamento de linguagem;

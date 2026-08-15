@@ -122,3 +122,17 @@ Considerar o texto pronto porque está correto, positivo e gramaticalmente adequ
 ### Decisão competente
 
 Aplicar o teste da troca de marca e reprovar. Voltar às fontes para encontrar situação, prática, pergunta, pessoa, projeto, escolha ou consequência específica. Formular ponto de vista antes de reescrever. Se não houver âncora, declarar o insumo ausente em vez de acrescentar slogan, gíria ou emoji.
+
+## 9. Católica SC anexada ao fechamento
+
+### Situação
+
+Uma peça de serviço apresenta uma sequência correta e útil, mas inteiramente intercambiável. O último card acrescenta a marca, um serviço e um CTA.
+
+### Falha
+
+Considerar que o fechamento resolveu a genericidade. A instituição participa apenas como assinatura; ângulo, método e progressão permaneceriam intactos com qualquer marca.
+
+### Decisão competente
+
+Retirar marca e CTA e reavaliar o núcleo. Se houver apenas lista automática, escolher um ponto de vista ou método editorial mais específico e conectar a orientação a uma decisão, evidência ou recurso atual da Católica SC. Quando o tema universal já tiver leitura própria e utilidade, preservar o caráter de serviço sem inserir promoção artificial. Se ainda faltar vínculo material, classificar como `rascunho-base não calibrado`, não como peça pronta.

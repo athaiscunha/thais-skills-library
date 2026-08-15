@@ -1,5 +1,15 @@
 # Playbooks de formato
 
+## Sumário
+
+- Regra comum
+- Carrossel
+- Vídeo curto
+- Publicação estática, foto e álbum
+- Stories
+- Legenda em relação à peça
+- Adaptação entre canais
+
 ## Regra comum
 
 Separar as unidades narrativas antes de dimensionar a peça. Cada unidade deve cumprir pelo menos uma função: abrir, informar, explicar, demonstrar, provar, contrastar, qualificar, orientar ou fechar.

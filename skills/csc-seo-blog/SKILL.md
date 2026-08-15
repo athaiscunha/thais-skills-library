@@ -19,7 +19,7 @@ Ler sempre:
 - `references/content-brief.md` para intenção, ângulo e arquitetura;
 - `references/on-page-qa.md` para a revisão final.
 
-Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
+Ler `references/handoff.md` ao receber contexto ou encaminhar artigo/brief para desdobramento. Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
 
 Usar `csc-marketing-context` antes de redigir fatos institucionais, de público, produto, prova ou terminologia. Consultar `catolicasc.org.br` em toda tarefa, começando pela página mais específica do assunto.
 

@@ -20,6 +20,8 @@ Usar esta relação como teste:
 
 Se restarem apenas valor de marca, benefício amplo e CTA, reprovar a versão.
 
+Não exigir que todo assunto pertença exclusivamente à Católica SC. Conteúdo de serviço pode partir de uma pergunta universal; o que precisa ser próprio é a leitura editorial, a forma de ajudar e a conexão material com a instituição. Acrescentar nome, logo ou CTA ao final não cria personalidade.
+
 ## Camadas de voz
 
 Definir quatro camadas sem obrigá-las a soar iguais:
@@ -57,6 +59,7 @@ Completar antes da redação:
 - `prova`: por que esse ponto de vista merece confiança;
 - `camadas de voz`: o que vem da instituição, do canal, da editoria e do episódio;
 - `escolha de identidade`: recurso verbal, narrativo ou visual que ajuda esta peça;
+- `regra de distintividade`: matéria-prima própria obrigatória ou ponto de vista de serviço suficiente;
 - `limite`: o que soaria forçado, genérico ou incompatível.
 
 Formular o ponto de vista:
@@ -71,11 +74,20 @@ Aplicar antes e depois da redação.
 
 ### 1. Teste da troca de marca
 
-Trocar mentalmente “Católica SC” pelo nome de outra instituição. Se fatos, pessoas, escolhas e argumento continuarem iguais, reprovar.
+Aplicar conforme a função da peça:
+
+- `produto, campanha, prova, comunidade ou editoria`: trocar mentalmente “Católica SC” por outra instituição. Se fatos, pessoas, escolhas e argumento continuarem iguais, reprovar;
+- `serviço ou educação`: retirar a marca e verificar se permanece um ponto de vista, método ou recorte útil. Aceitar tema universal somente quando a peça não for uma lista automática e sua conexão com a Católica SC mudar uma camada material da orientação.
+
+Não exigir promoção institucional dentro de conteúdo de serviço apenas para passar no teste.
 
 ### 2. Teste da âncora
 
 Exigir pelo menos uma âncora concreta e relevante. Não aceitar como âncora o nome da instituição, do curso ou do campus isoladamente.
+
+### 2A. Teste da ancoragem decorativa
+
+Remover último card, CTA, logo, assinatura e menções nominais. Se todo o vínculo com a Católica SC desaparecer e nada no ângulo, na evidência, no método ou na execução precisar mudar, reprovar. Marca anexada não converte conteúdo genérico em conteúdo de marca.
 
 ### 3. Teste do ponto de vista
 
@@ -101,6 +113,7 @@ Classificar internamente:
 
 - `aprovado`: passa nos testes centrais e possui base factual;
 - `reescrever`: existe matéria-prima, mas o ângulo ou a linguagem continuam genéricos;
+- `rascunho-base não calibrado`: há utilidade editorial, mas ainda não existe vínculo material suficiente para aprovar como peça da Católica SC;
 - `aguardar insumo`: falta âncora, fonte, pessoa, definição de editoria ou decisão capaz de sustentar personalidade.
 
 Não mostrar a classificação quando a usuária pediu apenas a peça pronta, exceto se houver bloqueio.
@@ -114,9 +127,10 @@ Quando a primeira rota falhar:
 3. escolher um fato, pessoa, pergunta, contraste, prática ou consequência;
 4. formular novo ponto de vista;
 5. selecionar formato e recurso de identidade somente depois;
-6. aplicar novamente os sete testes.
+6. retirar novamente marca e CTA para verificar se a identidade está na peça, não anexada a ela;
+7. aplicar novamente os demais testes.
 
-Se continuar genérico, não compensar com mais texto. Declarar o insumo ausente e, quando possível, propor uma pergunta de apuração ou uma versão de serviço factual.
+Se continuar genérico, não compensar com mais texto. Declarar o insumo ausente e, quando possível, propor uma pergunta de apuração ou um `rascunho-base não calibrado`. Não chamar essa versão de pronta para publicar.
 
 ## Calibração por exemplos
 

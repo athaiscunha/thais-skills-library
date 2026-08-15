@@ -1,5 +1,14 @@
 # Critérios de qualidade
 
+## Sumário
+
+- Fonte e atualidade
+- Decisão editorial
+- Progressão e redundância
+- Distintividade, voz e continuidade
+- Formato, produção e acessibilidade
+- Acabamento
+
 ## 1. Fonte e atualidade
 
 - A página específica e atual de `catolicasc.org.br` foi consultada?
@@ -45,11 +54,14 @@ Aplicar os bloqueios de `voice-and-personality.md`. Reprovar a peça quando falh
 
 - A peça depende de fatos, pessoas, lugares, projetos ou escolhas da Católica SC?
 - Seria possível trocar o nome da instituição por qualquer faculdade sem alterar o conteúdo?
+- A Católica SC muda o ângulo, a prova, o método, o serviço ou a execução, ou aparece somente no fechamento?
 - Há abstrações como excelência, inovação, transformação ou protagonismo sem demonstração?
 - A linguagem parece observação verdadeira ou instituição tentando imitar jovem?
 - O grau de formalidade combina com assunto, público e canal?
 
-Substituir generalidade por prova já disponível; não inventar especificidade.
+Em produto, campanha, prova, comunidade e editoria, exigir matéria-prima própria. Em serviço ou educação, aceitar tema universal somente quando houver ponto de vista ou método editorial específico e conexão material com recursos atuais da instituição. Não forçar promoção para fabricar exclusividade.
+
+Substituir generalidade por prova já disponível; não inventar especificidade. Reprovar ancoragem decorativa em logo, último card ou CTA.
 
 ## 4A. Continuidade editorial
 

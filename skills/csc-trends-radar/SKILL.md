@@ -19,7 +19,7 @@ Ler sempre:
 - `references/adaptation.md` para aderência e aplicação à Católica SC;
 - `references/report-template.md` para a entrega.
 
-Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
+Ler `references/state-and-history.md` quando a rodada precisar comparar itens usados, recusados, acompanhados ou arquivados. Ler `references/handoff.md` ao receber recorte/contexto ou encaminhar oportunidade para execução. Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
 
 Usar `csc-marketing-context` para marca, públicos, produtos, calendário e fatos. Consultar `catolicasc.org.br` em toda rodada antes de recomendar aplicação ligada a curso, profissão, evento, campus, data ou informação institucional.
 
@@ -36,6 +36,8 @@ Fixar:
 - perfis de referência opcionais.
 
 Na ausência de recorte, usar Instagram e TikTok, Brasil/português, últimos dez dias e aplicações orgânicas para educação, carreira, juventude e vida universitária. Explicitar esse recorte.
+
+Se nenhum histórico for fornecido, declarar que a filtragem de usos anteriores é parcial. Não afirmar que um item nunca foi usado apenas porque ele não aparece na conversa atual.
 
 Perfis indicados funcionam como amostra de controle, não como universo completo. Não depender apenas de concorrentes nem apenas de curadores de trends.
 
@@ -154,6 +156,8 @@ Usar `report-template.md`. Na ausência de formato pedido, entregar:
 7. recomendação final das duas ou três melhores oportunidades.
 
 Cada achado recomendado deve incluir evidências com links e datas, mecânica, estágio, confiança, aplicação CSC, editoria, esforço, validade, áudio e riscos.
+
+Quando a usuária pedir continuidade entre rodadas, acrescentar somente o bloco de atualização definido em `state-and-history.md`; não reimprimir o histórico inteiro.
 
 ## Encaminhamento para outras Skills
 

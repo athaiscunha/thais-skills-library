@@ -10,11 +10,15 @@ As Skills instaladas localmente são cópias de trabalho. A versão oficial é s
 .
 ├── README.md
 ├── docs/
+│   ├── EVALUATION.md
 │   ├── INSTALLATION.md
 │   ├── SOURCE_POLICY.md
 │   ├── SYNC.md
 │   ├── THIRD_PARTY_REVIEW.md
 │   └── VERSIONING.md
+├── evals/
+│   ├── cases.json
+│   └── run_static_checks.py
 ├── reviews/
 │   ├── README.md
 │   └── <nome-da-skill>.md
@@ -48,6 +52,7 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 7. Skills da Católica SC não devem depender de integrações com ferramentas externas.
 8. Documentos fornecidos são fontes formais, e `catolicasc.org.br` deve ser consultado em toda tarefa da Católica SC.
 9. Informações temporais não devem ser congeladas como regras permanentes.
+10. Toda mudança de comportamento deve passar pela validação estática e pelos casos de avaliação proporcionais ao risco.
 
 ## Começar
 
@@ -55,6 +60,7 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 - Rotina para manter as duas máquinas iguais: [docs/SYNC.md](docs/SYNC.md)
 - Política de fontes da Católica SC: [docs/SOURCE_POLICY.md](docs/SOURCE_POLICY.md)
 - Convenções de commits e versões: [docs/VERSIONING.md](docs/VERSIONING.md)
+- Validação e testes das Skills: [docs/EVALUATION.md](docs/EVALUATION.md)
 - Avaliação de Skills externas: [docs/THIRD_PARTY_REVIEW.md](docs/THIRD_PARTY_REVIEW.md)
 
 ## Skills disponíveis

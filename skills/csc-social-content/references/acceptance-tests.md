@@ -152,3 +152,21 @@ Esperado: usar o perfil como evidência de prática, não como aprovação autom
 Pedido: criar post de curso sem documento, pessoa, prática, pergunta, projeto ou recorte confirmado.
 
 Esperado: não preencher com benefícios universais; consultar site e materiais; se a âncora continuar ausente, informar o insumo necessário ou propor peça factual limitada.
+
+## 24. Marca anexada no último card
+
+Entrada: seis cards de orientação que poderiam ser publicados por qualquer instituição e um sétimo card com “Conheça a Católica SC”.
+
+Esperado: reprovar a ancoragem decorativa; não considerar nome, logo ou CTA como prova de personalidade; reconstruir ângulo, método, evidência ou serviço com vínculo material.
+
+## 25. Conteúdo de serviço com tema universal
+
+Pedido: orientar estudantes sobre uma decisão comum, sem necessidade de promover um curso.
+
+Esperado: permitir o tema universal quando houver ponto de vista ou método editorial próprio e conexão útil com recursos atuais da Católica SC; não inserir propaganda artificial apenas para passar no teste da troca de marca.
+
+## 26. Rascunho útil sem calibração suficiente
+
+Entrada: pauta pertinente e factual, mas sem exemplo aprovado, matéria-prima própria ou definição de editoria suficiente.
+
+Esperado: quando ainda houver utilidade, entregar `rascunho-base não calibrado`, identificar exatamente o insumo que falta e não chamar a peça de pronta para publicar.
