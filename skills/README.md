@@ -6,7 +6,8 @@ Este diretório contém somente Skills revisadas e prontas para uso.
 
 | Skill | Versão | Origem | Finalidade |
 |---|---:|---|---|
-| [`csc-paid-media-copy`](csc-paid-media-copy/) | 0.2.0 | criação própria | Copy de mídia paga da Católica SC para Meta Ads, Google Search e Performance Max |
+| [`csc-marketing-context`](csc-marketing-context/) | 0.1.0 | criação própria | Contexto rastreável da Católica SC com documentos e checagem obrigatória do site oficial |
+| [`csc-paid-media-copy`](csc-paid-media-copy/) | 0.3.0 | criação própria | Copy de mídia paga da Católica SC para Meta Ads, Google Search e Performance Max |
 
 ## Convenção de pastas
 
@@ -33,5 +34,7 @@ Cada `SKILL.md` deve:
 - declarar dependências e permissões necessárias;
 - evitar segredos, dados pessoais e fatos temporários embutidos;
 - ter passado pela revisão de terceiros quando não for criação própria.
+
+Skills da Católica SC também devem seguir [../docs/SOURCE_POLICY.md](../docs/SOURCE_POLICY.md): documentos são fontes formais, a consulta atual a `catolicasc.org.br` é obrigatória e integrações externas não fazem parte da arquitetura.
 
 Antes de adicionar uma Skill externa, siga [../docs/THIRD_PARTY_REVIEW.md](../docs/THIRD_PARTY_REVIEW.md).

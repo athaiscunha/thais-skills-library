@@ -45,7 +45,19 @@ Confirme que:
 - dependências e limitações estão documentadas;
 - exemplos não carregam dados, marcas ou fatos desatualizados como regras gerais.
 
-## 5. Adaptar e testar
+## 5. Verificar compatibilidade com nossa arquitetura
+
+Para Skills da Católica SC:
+
+- não incorporar conexão com plataformas, APIs, crawlers ou serviços externos;
+- trabalhar com documentos fornecidos e páginas oficiais consultadas durante a tarefa;
+- exigir consulta a `catolicasc.org.br` mesmo quando os documentos estiverem completos;
+- classificar informações mutáveis como temporais;
+- seguir [SOURCE_POLICY.md](SOURCE_POLICY.md).
+
+Uma Skill externa que dependa de integração pode ser classificada como `somente referência`. Nesse caso, aproveitar apenas o método que puder ser reescrito de forma autocontida, sem copiar dependências ou ampliar permissões.
+
+## 6. Adaptar e testar
 
 Quando a ideia for aproveitável:
 
@@ -56,7 +68,7 @@ Quando a ideia for aproveitável:
 5. teste chamadas explícitas e implícitas;
 6. verifique pelo menos um caso normal e um caso que não deve ativar a Skill.
 
-## 6. Registrar a decisão
+## 7. Registrar a decisão
 
 Use uma destas decisões:
 
