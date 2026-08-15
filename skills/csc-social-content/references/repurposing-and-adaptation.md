@@ -1,5 +1,13 @@
 # Reaproveitamento e adaptação
 
+## Sumário
+
+- Princípio e matéria-prima
+- Artigo ou documento longo
+- Evento, notícia e atualização institucional
+- Trend validada
+- Campanha, formatos e canais
+
 ## Princípio
 
 Reaproveitar a apuração e a matéria-prima, não a embalagem. Uma nova peça precisa ter função própria e funcionar sem depender da leitura da origem.

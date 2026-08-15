@@ -24,6 +24,7 @@ Ler conforme a tarefa:
 - produtos e rotas oficiais: `references/products.md`;
 - públicos, evidências de público ou personas: `references/audiences.md`;
 - diferenciais, números, depoimentos ou outras provas: `references/proof-points.md`;
+- entrada ou saída para outra Skill: `references/handoff.md`;
 - revisão da Skill ou teste do método: `references/acceptance-tests.md`.
 
 Usar essas referências como orientação durável e mapa de verificação. Nunca usá-las para dispensar a consulta atual ao site.

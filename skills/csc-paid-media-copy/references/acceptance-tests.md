@@ -2,6 +2,14 @@
 
 Usar em mudanças da skill e auditorias do método.
 
+## Sumário
+
+- Meta e recombinação
+- Google Search e Performance Max
+- Fontes, produtos e voz
+- Iteração com dados
+- Validação técnica e atualidade
+
 ## A | Meta Reels com cinco variações
 
 Entrada: curso específico, Reel narrado, cartela final com oferta, cinco títulos, cinco textos e uma descrição.
@@ -88,6 +96,7 @@ Aprovar somente se o script:
 - marcar corretamente a linha válida;
 - falhar na linha acima do limite;
 - detectar a duplicação normalizada;
+- contar texto após normalização Unicode NFC;
 - sair com código diferente de zero.
 
 ## L | Iteração com dados comparáveis
@@ -119,3 +128,13 @@ Dado um briefing com todos os campos necessários, aprovar somente se a skill:
 - comparar nome, modalidade, oferta, vigência, local e CTA;
 - não esconder divergência entre documento e página pública;
 - marcar a saída como rascunho sem validação de atualidade se o site estiver indisponível.
+
+## O | Especificação de plataforma sujeita a mudança
+
+Dado um pedido cuja quantidade, limite, fixação ou modelo de campos seja material, aprovar somente se a Skill:
+
+- priorizar o template atual fornecido pela usuária;
+- consultar a documentação oficial vigente quando não houver modelo suficiente;
+- distinguir padrão operacional da conta de limite técnico universal;
+- declarar a referência datada usada quando a fonte atual estiver indisponível;
+- não sobrescrever silenciosamente o modelo do briefing com uma tabela antiga da Skill.

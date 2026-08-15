@@ -13,11 +13,7 @@ Avaliar qualidade pré-veiculação por clareza, aderência, especificidade, div
 
 ## Carregar referências
 
-Ler sempre:
-
-- `references/brand.md` para nome, voz e nomenclatura;
-- `references/writing-quality.md` para arquitetura e qualidade;
-- `references/validation.md` antes da entrega.
+Ler `references/brand.md` para nome, voz e nomenclatura em toda tarefa. Ler `references/writing-quality.md` ao criar, revisar ou comparar copy. Ler `references/validation.md` antes da entrega final.
 
 Quando `csc-marketing-context` estiver disponível, usá-la para consolidar documentos, contexto e fontes antes de redigir. A consulta atual ao site continua obrigatória; o contexto compartilhado não a substitui.
 
@@ -29,6 +25,7 @@ Ler conforme a tarefa:
 - Performance Max: `references/google-pmax.md`;
 - Reel, vídeo narrado, lettering, cartela ou copy do criativo: `references/meta-reels-creative.md`;
 - iteração de copy com dados de campanha: `references/performance-iteration.md`;
+- entrada de contexto/campanha ou encaminhamento para acabamento: `references/handoff.md`;
 - revisão do método ou evolução da skill: `references/acceptance-tests.md`.
 
 Não carregar referência de plataforma ou produto sem relação com o pedido.
@@ -62,6 +59,8 @@ Extrair somente fatos confirmados sobre:
 - oferta, regra, vigência e CTA.
 
 Consultar sempre a página oficial mais específica e relevante em `catolicasc.org.br` antes da entrega final, mesmo quando o briefing ou os documentos parecerem completos. Registrar internamente URL e data da consulta e comparar os fatos materiais. Começar pela página do produto, curso ou campanha; consultar FAQ, edital, ato ou página institucional quando a alegação exigir.
+
+Quando a entrega depender de campo, volume, limite, fixação, combinação ou comportamento atual de Meta ou Google, consultar a documentação oficial vigente da plataforma durante a tarefa. Priorizar o template ou mídia plan atual fornecido pela usuária; depois, a interface atual informada; por fim, a referência datada da Skill. Se a documentação atual não puder ser consultada, declarar a base operacional usada e não apresentar o limite como regra técnica universal.
 
 Aplicar esta prioridade quando as fontes divergirem:
 

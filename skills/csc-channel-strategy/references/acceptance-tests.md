@@ -61,3 +61,9 @@ Esperado: encaminhar execução a `csc-social-content`; esta Skill participa som
 Entrada: proposta de série “Transformando o futuro” para mostrar qualidade, inovação e preparação para o mercado.
 
 Esperado: reprovar no teste da troca de marca; exigir público, promessa, ponto de vista, matéria-prima recorrente e assinatura funcional; não incluir no calendário apenas por ter nome e frequência.
+
+## 14. Passagem para conteúdo social
+
+Pedido: definir a estratégia de uma campanha orgânica e entregar o brief da primeira peça, sem escrever a peça.
+
+Esperado: liderar a estratégia, usar `csc-marketing-context` para a base factual e encaminhar um `social_content_brief` com todas as chaves exigidas por `csc-social-content`: decisão aprovada, sistema editorial, matéria-prima, `context_packet` integral, CTA com vigência e responsável, produção detalhada, restrições, hipóteses e pendências. Marcar ausências em vez de inventar, omitir ou substituir o contexto por um resumo.

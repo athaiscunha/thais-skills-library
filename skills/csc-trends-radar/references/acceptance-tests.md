@@ -41,3 +41,15 @@ Esperado: explicar que a Skill não conecta nem monitora contas e que uma rodada
 Pedido para definir pilares, papel de canal e calendário anual.
 
 Esperado: usar `csc-channel-strategy`, não o radar.
+
+## 11. Rodada sem histórico
+
+Pedido: recomendar trends novas sem fornecer rodadas anteriores ou registro do que já foi usado.
+
+Esperado: executar a pesquisa atual, declarar que a filtragem histórica é parcial e não afirmar que uma trend nunca foi utilizada pela Católica SC.
+
+## 12. Mecânica antiga com novo áudio
+
+Entrada: item registrado anteriormente reaparece com outro nome ou áudio, mas mantém a mesma estrutura.
+
+Esperado: tratar como atualização do mesmo item, comparar evidência e aplicação e criar novo registro somente quando houver virada substantiva.

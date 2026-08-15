@@ -13,21 +13,19 @@ Não conectar contas, APIs, plataformas de publicação, analytics ou ferramenta
 
 ## Carregar referências
 
-Ler sempre:
-
-- `references/editorial-decisions.md` para decidir trabalho editorial, ângulo e formato;
-- `references/voice-and-personality.md` para bloquear conteúdo genérico e calibrar as camadas de voz;
-- `references/quality-gates.md` para validar a entrega.
+Ler `references/voice-and-personality.md` em toda criação ou revisão de conteúdo.
 
 Ler conforme a tarefa:
 
+- `references/editorial-decisions.md` ao decidir pauta, trabalho editorial, ângulo ou formato;
 - `references/format-playbooks.md` ao criar ou revisar carrossel, vídeo curto, publicação estática ou Stories;
 - `references/repurposing-and-adaptation.md` ao partir de artigo, documento, evento, notícia, campanha, trend ou peça de outro canal;
 - `references/series-execution.md` ao criar, revisar ou propor episódio de editoria recorrente;
 - `references/production-and-accessibility.md` ao entregar roteiro, briefing, lista de captação ou peça pronta para produção;
+- `references/handoff.md` ao receber estratégia, artigo ou trend estruturados ou encaminhar a peça para acabamento;
 - `references/calibration-cases.md` quando houver dúvida sobre progressão, redução, formato ou reaproveitamento.
 
-Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
+Ler `references/quality-gates.md` antes de liberar uma peça completa. Ler `references/acceptance-tests.md` somente ao testar ou alterar a Skill.
 
 Usar `csc-marketing-context` como base factual e de voz. Consultar `catolicasc.org.br` em toda tarefa, começando pela página mais específica do produto, curso, campus, evento ou assunto, mesmo quando os documentos pareçam completos.
 
@@ -98,7 +96,15 @@ Aplicar `voice-and-personality.md` antes de escrever. Fixar:
 - camada de voz institucional, de canal, de editoria e da peça;
 - escolha verbal, narrativa ou visual que dê identidade sem forçar informalidade.
 
-Reprovar o ângulo se a peça puder receber o nome de qualquer faculdade sem mudança material, se depender apenas de benefício abstrato ou se usar gíria, emoji e frase de efeito como substitutos de personalidade. Reconstruir uma vez com a matéria-prima disponível. Se continuar genérica, não redigir preenchimento: declarar qual âncora ou decisão falta.
+Classificar a exigência de distintividade:
+
+- em conteúdo de produto, campanha, prova, comunidade ou editoria, exigir matéria-prima própria da Católica SC e reprovar se a marca puder ser trocada sem reescrever o argumento;
+- em conteúdo de serviço ou educação, admitir tema universal somente quando houver ponto de vista, método ou recorte editorial específico e uma relação útil com recursos atuais da Católica SC;
+- em qualquer tipo, reprovar quando a instituição aparecer apenas no último card, no CTA, no logo ou em uma frase promocional acrescentada depois.
+
+Remover mentalmente nome, logo e CTA. Se a peça restante for apenas uma lista correta que qualquer instituição publicaria da mesma forma, reconstruir o ângulo. Não curar genericidade com gíria, emoji, slogan ou menção decorativa à marca.
+
+Reconstruir uma vez com a matéria-prima disponível. Se continuar genérica, não redigir preenchimento como peça aprovada: entregar, quando útil, um `rascunho-base não calibrado` e declarar a âncora, decisão ou exemplo necessário.
 
 ### 5. Construir a arquitetura
 
@@ -205,4 +211,5 @@ Em pedido simples, omitir bastidores decisórios e entregar a peça pronta mais 
 - Não usar concorrentes ou exemplos externos para completar fatos da Católica SC.
 - Não copiar formato distintivo, texto ou execução de criador; adaptar somente mecânicas genéricas com autoria e risco considerados.
 - Não usar gíria, emoji, bordão, intimidade artificial ou frase de efeito como substitutos de ponto de vista e matéria-prima.
+- Não inserir a Católica SC apenas no fechamento ou no CTA para disfarçar conteúdo intercambiável.
 - Não considerar uma peça pronta quando falta validação factual, direito de uso ou insumo essencial de produção.

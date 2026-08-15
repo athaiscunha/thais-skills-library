@@ -19,7 +19,7 @@ Ler sempre:
 - `references/semantic-redundancy.md` para eliminar repetição de sentido sem empobrecer o texto;
 - `references/genre-rules.md` para calibrar a revisão ao gênero.
 
-Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
+Ler `references/handoff.md` quando o texto vier de outra Skill ou precisar retornar sem perder fatos, limites e função. Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
 
 ## Escolher o modo
 

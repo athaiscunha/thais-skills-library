@@ -66,7 +66,8 @@ def main() -> int:
             print(f"ERRO linha {number}: texto vazio")
             failures += 1
             continue
-        count = len(asset)
+        counted_asset = unicodedata.normalize("NFC", asset)
+        count = len(counted_asset)
         status = "OK" if count <= limit else "ACIMA"
         print(f"{status}\t{field}\t[{count}/{limit}]\t{asset}")
         if count > limit:
