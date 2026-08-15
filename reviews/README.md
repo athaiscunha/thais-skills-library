@@ -1,6 +1,16 @@
-# Registro de revisões externas
+# Registros de revisão
 
-Este diretório registra o que foi analisado em Skills de terceiros e a decisão tomada. Uma revisão `somente referência` não aprova instalação, cópia integral nem execução de scripts.
+Este diretório guarda avaliações de Skills externas antes de qualquer incorporação à biblioteca.
+
+Um registro de revisão não instala nem aprova automaticamente uma Skill. A decisão deve estar explícita no documento. Uma revisão `somente referência` não aprova instalação, cópia integral nem execução de scripts.
+
+Use um arquivo por candidata:
+
+```text
+reviews/<nome-da-skill>.md
+```
+
+O roteiro e o modelo estão em [../docs/THIRD_PARTY_REVIEW.md](../docs/THIRD_PARTY_REVIEW.md).
 
 ## Revisões atuais
 
