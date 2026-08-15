@@ -1,1 +1,56 @@
-m«ëˆ§½©buªàºg§·õ,z»?¥ªk‰ÆµÓ}¿‡.™éí³ğ¨uìÛMºÓÍxş·Ÿz·§qç\…«`¦×(÷«±«b¢{aŠÈ¬jğ¢¹?­êhr§ïİ¡Ë?TDR ãH4iRÆ y¶¬{®vçºh¢ø¥zŠ.µø¥y¶ëy©­æ¤zw(uçhºÚn¶êbÚ%Šw¬¡ù^aéƒu×œ¡×yÊz)éºØazZ]ŠÊek+aŠÉ²Æ z(§¦ëb›­~)^uçÚº[_¢»-v)è¢ëiºÚ.¶›­~)^uçÚº[_¢»-v‹­
+# Versionamento e convenÃ§Ãµes
+
+## Fonte oficial
+
+- `main` representa a versÃ£o mais recente revisada e utilizÃ¡vel.
+- `skills/` contÃ©m as Skills canÃ´nicas.
+- `plugins/thais-skills-library/skills/` Ã© o pacote de distribuiÃ§Ã£o gerado a partir das Skills canÃ´nicas.
+- MudanÃ§as incompletas ou experimentais nÃ£o devem permanecer em `main`.
+- VersÃµes estÃ¡veis da biblioteca podem receber tags no formato `vMAJOR.MINOR.PATCH`.
+
+## SemVer
+
+O campo `version` de `plugins/thais-skills-library/.codex-plugin/plugin.json` usa versionamento semÃ¢ntico:
+
+- **PATCH**: correÃ§Ã£o ou esclarecimento sem alterar o comportamento esperado.
+- **MINOR**: nova Skill ou capacidade compatÃ­vel.
+- **MAJOR**: mudanÃ§a incompatÃ­vel que exige adaptaÃ§Ã£o ou reinstalaÃ§Ã£o.
+
+Exemplos: `1.0.1`, `1.1.0`, `2.0.0`.
+
+A versÃ£o `1.0.0` identifica o primeiro pacote estÃ¡vel com as sete Skills validadas. A versÃ£o deve ser atualizada no mesmo PR que muda o comportamento distribuÃ­do.
+
+## Mensagens de commit
+
+Use mensagens curtas no formato:
+
+```text
+tipo(escopo): descriÃ§Ã£o
+```
+
+Tipos recomendados:
+
+- `feat`: nova Skill ou capacidade.
+- `fix`: correÃ§Ã£o de comportamento.
+- `docs`: documentaÃ§Ã£o.
+- `refactor`: reorganizaÃ§Ã£o sem mudanÃ§a de comportamento.
+- `chore`: manutenÃ§Ã£o do repositÃ³rio.
+- `security`: correÃ§Ã£o ou endurecimento de seguranÃ§a.
+
+Exemplos:
+
+```text
+feat(csc-seo-blog): adicionar fluxo de auditoria
+fix(csc-paid-media-copy): impedir afirmaÃ§Ãµes sem fonte
+docs: explicar sincronizaÃ§Ã£o da segunda mÃ¡quina
+security(skill-name): remover chamada externa desnecessÃ¡ria
+```
+
+## Antes de publicar
+
+```sh
+python3 scripts/sync_plugin_bundle.py
+python3 evals/run_static_checks.py
+```
+
+A pasta da Skill deve permanecer autocontida. Se uma alteraÃ§Ã£o muda o modo de usÃ¡-la, registre a migraÃ§Ã£o no prÃ³prio `SKILL.md` ou em `references/`.

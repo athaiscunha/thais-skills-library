@@ -1,1 +1,48 @@
-m´ÎàßΩ©bu™‡∫gß∑ı,zª?•™kâ∆µ”}øá.ôÈÌ≥®uÏ€M∫”Õx˛∑üz∑ßqÁ\Ö´`¶◊(û˜´±´b¢{aä»¨j¢π?≠ÍhrßÅÔ›°À?IÉBô’,jõj«∫‡7an{¶ä)ﬂäW®¢Î_äWõn∑öë∫ﬁjGßrá^vã≠¶În¶)Ì¢Xßz ïÈ‡∂Óò7]y y◊ú°◊¢ûõ≠Ü••ÿ¨¶V≤∂¨ôÎ,j¢äzn∂)È∫◊‚ïÁ^}´•µ˙+≤◊bûä.∂õ≠¢Îi∫◊‚ïÁ^}´•µ˙+≤◊h∫
+# Sincroniza√ß√£o entre as duas m√°quinas
+
+O reposit√≥rio remoto √© a fonte de verdade. N√£o edite a c√≥pia instalada pelo Codex: toda melhoria nasce em `skills/`, passa por revis√£o e chega √† branch `main`.
+
+## Atualizar uma m√°quina
+
+Na m√°quina que precisa receber a vers√£o nova, abra uma tarefa no Codex e cole:
+
+> Atualize o marketplace privado `thais-skills` a partir da branch `main` de `athaiscunha/thais-skills-library`, reinstale ou atualize o plugin `thais-skills-library`, valide as sete Skills e me avise quando eu puder abrir uma nova tarefa para us√°-las. N√£o instale Skills de terceiros.
+
+Depois da confirma√ß√£o, abra uma tarefa nova. Skills e plugins s√£o carregados no in√≠cio da tarefa, por isso uma conversa que j√° estava aberta pode continuar usando a vers√£o anterior.
+
+## Comandos equivalentes
+
+```sh
+codex plugin marketplace upgrade thais-skills
+codex plugin add thais-skills-library@thais-skills
+```
+
+Se o marketplace tiver sido cadastrado a partir de uma c√≥pia local autenticada, primeiro atualize essa c√≥pia a partir de `main` e depois reinstale o plugin.
+
+## Ao melhorar uma Skill
+
+1. Edite somente a vers√£o can√¥nica em `skills/<nome-da-skill>/`.
+2. Gere novamente o pacote instal√°vel:
+
+   ```sh
+   python3 scripts/sync_plugin_bundle.py
+   ```
+
+3. Execute a valida√ß√£o:
+
+   ```sh
+   python3 evals/run_static_checks.py
+   ```
+
+4. Publique por branch e PR.
+5. Depois do merge em `main`, atualize o plugin nas duas m√°quinas com o pedido acima.
+
+O diret√≥rio `plugins/thais-skills-library/skills/` √© uma c√≥pia de distribui√ß√£o gerada. N√£o deve ser editado √† m√£o; a valida√ß√£o reprova qualquer diverg√™ncia em rela√ß√£o a `skills/`.
+
+## Regras para evitar vers√µes diferentes
+
+1. `main` √© a √∫nica vers√£o aprovada para uso cotidiano.
+2. Fa√ßa a mudan√ßa primeiro no reposit√≥rio, nunca na instala√ß√£o local.
+3. Atualize as duas m√°quinas depois de cada vers√£o publicada.
+4. Se o Codex n√£o enxergar a mudan√ßa, abra uma tarefa nova antes de diagnosticar a instala√ß√£o.
+5. Em caso de conflito, n√£o force nem sobrescreva: compare as vers√µes e preserve a fonte revisada.

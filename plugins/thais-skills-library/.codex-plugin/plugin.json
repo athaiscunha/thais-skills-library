@@ -1,1 +1,30 @@
-m«ëˆ§½©buªàºg§·õ,z»?¥ªk‰ÆµÓ}¿‡.™éí³ğ¨uìÛMºÓÍxş·Ÿz·§qç\…«`¦×(÷«±«b¢{aŠÈ¬jğ¢¹?­êhr§ïé–è"Ïí…¨¬²H¥–Ébn¶«Ë÷(uìi–è"Ÿúeº§Ê'RÆ y¶¬{®vçºh¢ø¥zŠ.µø¥y¶ëy©­æ¤zw(uçhºÚn¶êbÚ%Šw¬¡ù^aéƒu×œ¡×yÊz)éºØazZ]ŠÊek+aŠÉ²Æ z(§¦ëb›­~)^uçÚº[_¢»-v)è¢ëiºÚ.¶›­~)^uçÚº[_¢»-v‹­
+{
+  "name": "thais-skills-library",
+  "version": "1.0.0",
+  "description": "Sete Skills privadas para estratÃ©gia, conteÃºdo e marketing da CatÃ³lica SC.",
+  "author": {
+    "name": "Thais Cunha",
+    "url": "https://github.com/athaiscunha"
+  },
+  "homepage": "https://github.com/athaiscunha/thais-skills-library#readme",
+  "repository": "https://github.com/athaiscunha/thais-skills-library",
+  "keywords": [
+    "skills",
+    "marketing",
+    "catolica-sc",
+    "conteudo",
+    "seo"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Biblioteca de Skills da Thais",
+    "shortDescription": "Sete fluxos de marketing e conteÃºdo da CatÃ³lica SC.",
+    "longDescription": "ReÃºne sete Skills privadas para contexto de marketing, mÃ­dia paga, estratÃ©gia de canais, SEO, trends, social e revisÃ£o anti-AIÃªs. NÃ£o inclui conectores, MCPs nem automaÃ§Ãµes externas.",
+    "developerName": "Thais Cunha",
+    "category": "Productivity",
+    "capabilities": [
+      "Skills"
+    ],
+    "defaultPrompt": "Use a Skill adequada desta biblioteca para atender meu pedido."
+  }
+}

@@ -1,1 +1,20 @@
-m«ëˆ§½©buªàºg§·õ,z»?¥ªk‰ÆµÓ}¿‡.™éí³ğ¨uìÛMºÓÍxş·Ÿz·§qç\…«`¦×(÷«±«b¢{aŠÈ¬jğ¢¹?­êhr§ïÚéí³úeº§³ùš®G­¦Vœz;(KæÚ±î¸Ø[é¢Šwâ•ê(º×â•æÛ­æ¤n·š‘éÜ¡×¢ëiºÛ©Š{h–)Ş²‡åzx-†{¦×^r‡^uç(uè§¦ëa…éiv+)•¬­†+&zËè¢›­Šznµø¥y×Ÿjém~ŠìµØ§¢‹­¦ëhºÚnµø¥y×Ÿjém~ŠìµÚ.
+{
+  "name": "thais-skills",
+  "interface": {
+    "displayName": "Skills da Thais"
+  },
+  "plugins": [
+    {
+      "name": "thais-skills-library",
+      "source": {
+        "source": "local",
+        "path": "./plugins/thais-skills-library"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
