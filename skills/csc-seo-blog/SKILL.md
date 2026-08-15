@@ -181,6 +181,7 @@ Quando a usuária pedir apenas o artigo, manter a apuração internamente e expo
 
 - usar `csc-channel-strategy` para decidir o papel do blog no sistema de canais;
 - usar `csc-trends-radar` quando a pauta depender de oportunidade cultural atual;
+- usar `csc-social-content` para transformar o artigo em publicação orgânica com recorte e narrativa próprios;
 - usar `editor-anti-aies` para acabamento de linguagem e redundância;
 - usar `csc-marketing-context` para base factual e conflitos.
 

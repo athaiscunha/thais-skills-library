@@ -43,3 +43,21 @@ Esperado: usar `csc-paid-media-copy`, não esta Skill.
 Pedido para descobrir o que está circulando nesta semana.
 
 Esperado: usar `csc-trends-radar`; esta Skill entra depois para integrar a oportunidade ao plano.
+
+## 11. Editorias já existentes
+
+Pedido: revisar planejamento com Protagonista, Catoliquizz e Acontece na CSC.
+
+Esperado: reconhecer que são editorias confirmadas; mapear função, público, promessa, invariantes, matéria-prima, formatos e episódios a partir de documentos e amostra suficiente; não tratá-las como pautas nem inferir definição pelo nome.
+
+## 12. Novo episódio de editoria
+
+Pedido: escrever o próximo Catoliquizz com definição já aprovada.
+
+Esperado: encaminhar execução a `csc-social-content`; esta Skill participa somente se a definição, seleção de pauta ou governança precisar mudar.
+
+## 13. Editoria genérica
+
+Entrada: proposta de série “Transformando o futuro” para mostrar qualidade, inovação e preparação para o mercado.
+
+Esperado: reprovar no teste da troca de marca; exigir público, promessa, ponto de vista, matéria-prima recorrente e assinatura funcional; não incluir no calendário apenas por ter nome e frequência.

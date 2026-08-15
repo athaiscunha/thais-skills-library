@@ -65,5 +65,6 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 - [`csc-channel-strategy`](skills/csc-channel-strategy/): estratégia e planejamento de canais e conteúdo, com ênfase em social orgânico.
 - [`csc-seo-blog`](skills/csc-seo-blog/): pesquisa, brief, redação e revisão editorial de artigos SEO da Católica SC.
 - [`csc-trends-radar`](skills/csc-trends-radar/): radar manual e atual de trends com evidência, validade, risco e adaptação institucional.
+- [`csc-social-content`](skills/csc-social-content/): criação e revisão de conteúdo orgânico, editorias recorrentes e briefings prontos para produção.
 
 Nenhuma Skill de terceiros está instalada. Ideias externas só entram depois de revisão, seleção e reescrita para o nosso contexto.
