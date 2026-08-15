@@ -8,6 +8,10 @@ Este diretório contém somente Skills revisadas e prontas para uso.
 |---|---:|---|---|
 | [`csc-marketing-context`](csc-marketing-context/) | 0.1.0 | criação própria | Contexto rastreável da Católica SC com documentos e checagem obrigatória do site oficial |
 | [`csc-paid-media-copy`](csc-paid-media-copy/) | 0.3.0 | criação própria | Copy de mídia paga da Católica SC para Meta Ads, Google Search e Performance Max |
+| [`editor-anti-aies`](editor-anti-aies/) | 0.1.0 | criação própria; reconstrução do fluxo anterior | Revisão e redação anti-AIês com preservação de voz e controle de redundância semântica |
+| [`csc-channel-strategy`](csc-channel-strategy/) | 0.1.0 | criação própria | Estratégia de canais, sistema editorial, planejamento e medição sem integrações |
+| [`csc-seo-blog`](csc-seo-blog/) | 0.1.0 | criação própria | Pesquisa, brief, redação e revisão de artigos SEO com fontes e consulta obrigatória ao site |
+| [`csc-trends-radar`](csc-trends-radar/) | 0.1.0 | criação própria | Descoberta e triagem manual de trends atuais com evidência, risco e aplicação à CSC |
 
 ## Convenção de pastas
 
