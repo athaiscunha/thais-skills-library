@@ -4,6 +4,6 @@ interface:
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#FEBD08"
-  default_prompt: "Use $csc-paid-media-copy para criar e validar um banco de anúncios da Católica SC a partir deste briefing."
+  default_prompt: "Crie e valide um banco de anúncios da Católica SC a partir deste briefing."
 policy:
   allow_implicit_invocation: true
