@@ -1,7 +1,7 @@
 {
   "name": "thais-skills-library",
-  "version": "1.0.0",
-  "description": "Sete Skills privadas para estratégia, conteúdo e marketing da Católica SC.",
+  "version": "1.0.1",
+  "description": "Sete Skills para estratégia, conteúdo e marketing da Católica SC.",
   "author": {
     "name": "Thais Cunha",
     "url": "https://github.com/athaiscunha"
@@ -19,12 +19,14 @@
   "interface": {
     "displayName": "Biblioteca de Skills da Thais",
     "shortDescription": "Sete fluxos de marketing e conteúdo da Católica SC.",
-    "longDescription": "Reúne sete Skills privadas para contexto de marketing, mídia paga, estratégia de canais, SEO, trends, social e revisão anti-AIês. Não inclui conectores, MCPs nem automações externas.",
+    "longDescription": "Reúne sete Skills para contexto de marketing, mídia paga, estratégia de canais, SEO, trends, social e revisão anti-AIês. Não inclui conectores, MCPs nem automações externas.",
     "developerName": "Thais Cunha",
     "category": "Productivity",
     "capabilities": [
       "Skills"
     ],
-    "defaultPrompt": "Use a Skill adequada desta biblioteca para atender meu pedido."
+    "defaultPrompt": [
+      "Use a Skill adequada desta biblioteca para atender meu pedido."
+    ]
   }
 }
