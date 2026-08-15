@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 import subprocess
 import sys
@@ -15,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_ROOT = ROOT / "skills"
 CASES_PATH = ROOT / "evals" / "cases.json"
+PLUGIN_ROOT = ROOT / "plugins" / "thais-skills-library"
 RESOURCE_PATTERN = re.compile(r"`((?:references|scripts|assets)/[^`]+)`")
 
 
@@ -208,6 +210,42 @@ def check_paid_asset_auditor() -> list[str]:
     return []
 
 
+def tree_hashes(root: Path) -> dict[str, str]:
+    return {
+        path.relative_to(root).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+        for path in sorted(root.rglob("*"))
+        if path.is_file()
+    }
+
+
+def check_plugin_bundle(skill_names: set[str]) -> list[str]:
+    errors: list[str] = []
+    manifest_path = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
+    marketplace_path = ROOT / ".agents" / "plugins" / "marketplace.json"
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f"plugin: manifesto inválido: {exc}"]
+    if manifest.get("name") != "thais-skills-library" or manifest.get("skills") != "./skills/":
+        errors.append("plugin: identidade ou caminho de Skills inválido")
+    try:
+        marketplace = json.loads(marketplace_path.read_text(encoding="utf-8"))
+        entry = marketplace["plugins"][0]
+    except (OSError, json.JSONDecodeError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f"plugin: marketplace inválido: {exc}")
+    else:
+        if marketplace.get("name") != "thais-skills" or entry.get("name") != "thais-skills-library":
+            errors.append("plugin: marketplace não aponta para o pacote esperado")
+    bundled = PLUGIN_ROOT / "skills"
+    bundled_names = {path.name for path in bundled.iterdir() if (path / "SKILL.md").is_file()}
+    if bundled_names != skill_names:
+        errors.append("plugin: conjunto de Skills diverge da biblioteca canônica")
+    for name in sorted(skill_names & bundled_names):
+        if tree_hashes(SKILLS_ROOT / name) != tree_hashes(bundled / name):
+            errors.append(f"plugin: cópia de {name} diverge de skills/{name}")
+    return errors
+
+
 def main() -> int:
     skill_dirs = sorted(path for path in SKILLS_ROOT.iterdir() if (path / "SKILL.md").is_file())
     skill_names = {path.name for path in skill_dirs}
@@ -219,6 +257,7 @@ def main() -> int:
         warnings.extend(skill_warnings)
     errors.extend(check_cases(skill_names))
     errors.extend(check_paid_asset_auditor())
+    errors.extend(check_plugin_bundle(skill_names))
 
     for warning in warnings:
         print(f"AVISO {warning}")

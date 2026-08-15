@@ -1,0 +1,4 @@
+interface:
+  display_name: "Editor anti-AIês"
+  short_description: "Revê texto artificial e redundante"
+  default_prompt: "Use $editor-anti-aies para revisar este texto sem apagar a voz da autora."

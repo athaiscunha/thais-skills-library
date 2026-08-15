@@ -1,40 +1,48 @@
 # Sincronização entre as duas máquinas
 
-O repositório remoto é a fonte de verdade. Antes de trabalhar em qualquer máquina, atualize o clone local.
+O repositório remoto é a fonte de verdade. Não edite a cópia instalada pelo Codex: toda melhoria nasce em `skills/`, passa por revisão e chega à branch `main`.
 
-## Antes de usar ou editar
+## Atualizar uma máquina
 
-```sh
-cd "$HOME/Documents/Skills/thais-skills-library"
-git switch main
-git pull --ff-only
-```
+Na máquina que precisa receber a versão nova, abra uma tarefa no Codex e cole:
 
-## Depois de editar uma Skill
+> Atualize o marketplace privado `thais-skills` a partir da branch `main` de `athaiscunha/thais-skills-library`, reinstale ou atualize o plugin `thais-skills-library`, valide as sete Skills e me avise quando eu puder abrir uma nova tarefa para usá-las. Não instale Skills de terceiros.
 
-```sh
-git status
-git add skills/<nome-da-skill>
-git commit -m "feat(<nome-da-skill>): descrever a mudança"
-git push origin main
-```
+Depois da confirmação, abra uma tarefa nova. Skills e plugins são carregados no início da tarefa, por isso uma conversa que já estava aberta pode continuar usando a versão anterior.
 
-Para mudanças apenas de documentação, use `docs:` no início da mensagem.
-
-## Na outra máquina
+## Comandos equivalentes
 
 ```sh
-cd "$HOME/Documents/Skills/thais-skills-library"
-git switch main
-git pull --ff-only
+codex plugin marketplace upgrade thais-skills
+codex plugin add thais-skills-library@thais-skills
 ```
 
-Como as Skills são ligadas por atalhos, não é necessário reinstalá-las depois do `git pull`. Reinicie o Codex somente se a mudança não aparecer.
+Se o marketplace tiver sido cadastrado a partir de uma cópia local autenticada, primeiro atualize essa cópia a partir de `main` e depois reinstale o plugin.
 
-## Regras para evitar conflitos
+## Ao melhorar uma Skill
 
-1. Sempre execute `git pull --ff-only` antes de editar.
-2. Não edite a mesma Skill simultaneamente nas duas máquinas.
-3. Faça commits pequenos e com uma intenção clara.
-4. Envie a mudança ao GitHub antes de continuar na outra máquina.
-5. Se o Git avisar sobre conflito, não force nem sobrescreva: revise as duas versões antes de resolver.
+1. Edite somente a versão canônica em `skills/<nome-da-skill>/`.
+2. Gere novamente o pacote instalável:
+
+   ```sh
+   python3 scripts/sync_plugin_bundle.py
+   ```
+
+3. Execute a validação:
+
+   ```sh
+   python3 evals/run_static_checks.py
+   ```
+
+4. Publique por branch e PR.
+5. Depois do merge em `main`, atualize o plugin nas duas máquinas com o pedido acima.
+
+O diretório `plugins/thais-skills-library/skills/` é uma cópia de distribuição gerada. Não deve ser editado à mão; a validação reprova qualquer divergência em relação a `skills/`.
+
+## Regras para evitar versões diferentes
+
+1. `main` é a única versão aprovada para uso cotidiano.
+2. Faça a mudança primeiro no repositório, nunca na instalação local.
+3. Atualize as duas máquinas depois de cada versão publicada.
+4. Se o Codex não enxergar a mudança, abra uma tarefa nova antes de diagnosticar a instalação.
+5. Em caso de conflito, não force nem sobrescreva: compare as versões e preserve a fonte revisada.

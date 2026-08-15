@@ -4,6 +4,8 @@ Repositório privado que funciona como **fonte de verdade** para as Skills pesso
 
 As Skills instaladas localmente são cópias de trabalho. A versão oficial é sempre a que está neste repositório, na branch `main`.
 
+As sete Skills também são distribuídas juntas pelo plugin privado **Biblioteca de Skills da Thais**. Na segunda máquina, basta pedir ao Codex para instalar o plugin deste repositório; veja [docs/INSTALLATION.md](docs/INSTALLATION.md).
+
 ## Estrutura
 
 ```text
@@ -19,6 +21,12 @@ As Skills instaladas localmente são cópias de trabalho. A versão oficial é s
 ├── evals/
 │   ├── cases.json
 │   └── run_static_checks.py
+├── .agents/plugins/marketplace.json
+├── plugins/thais-skills-library/
+│   ├── .codex-plugin/plugin.json
+│   └── skills/               # pacote gerado das sete Skills
+├── scripts/
+│   └── sync_plugin_bundle.py
 ├── reviews/
 │   ├── README.md
 │   └── <nome-da-skill>.md
@@ -56,7 +64,7 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 
 ## Começar
 
-- Primeira instalação em cada máquina: [docs/INSTALLATION.md](docs/INSTALLATION.md)
+- Instalação das sete Skills de uma vez: [docs/INSTALLATION.md](docs/INSTALLATION.md)
 - Rotina para manter as duas máquinas iguais: [docs/SYNC.md](docs/SYNC.md)
 - Política de fontes da Católica SC: [docs/SOURCE_POLICY.md](docs/SOURCE_POLICY.md)
 - Convenções de commits e versões: [docs/VERSIONING.md](docs/VERSIONING.md)

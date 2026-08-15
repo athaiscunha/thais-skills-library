@@ -1,54 +1,46 @@
-# Instalação em uma máquina
+# Instalação das sete Skills em outra máquina
 
-Repita este procedimento nas duas máquinas. O GitHub guarda a versão oficial; cada computador mantém um clone local e atalhos para as Skills aprovadas.
+O caminho recomendado é instalar **um único plugin privado**. Ele contém as sete Skills aprovadas e não inclui conectores, MCPs, automações ou Skills de terceiros.
 
-## Pré-requisitos
+## Jeito mais simples
 
-- Git instalado.
-- Acesso ao repositório privado `athaiscunha/thais-skills-library`.
-- Codex desktop, CLI ou extensão.
+Na outra máquina, abra o Codex no aplicativo do ChatGPT e cole este pedido em uma tarefa nova:
 
-## 1. Clonar a biblioteca
+> Instale e valide o pacote privado de Skills do repositório `athaiscunha/thais-skills-library`, usando a branch `main`. Use o GitHub já conectado. Configure o marketplace `thais-skills`, instale o plugin `thais-skills-library` e confirme que as sete Skills estão disponíveis em uma nova tarefa. Se o acesso remoto ao repositório privado não funcionar pelo terminal, use a conexão autenticada do GitHub para obter uma cópia local e cadastre esse marketplace local. Não instale Skills de terceiros e não altere o conteúdo das Skills.
 
-Com SSH configurado no GitHub:
+O Codex deve fazer a instalação e devolver uma confirmação com os sete nomes. Você não precisa copiar pasta por pasta.
+
+## O que será instalado
+
+1. `csc-marketing-context`
+2. `csc-paid-media-copy`
+3. `editor-anti-aies`
+4. `csc-channel-strategy`
+5. `csc-seo-blog`
+6. `csc-trends-radar`
+7. `csc-social-content`
+
+## Verificação final
+
+Depois da instalação, feche a tarefa usada para instalar e abra uma nova. Peça:
+
+> Liste as Skills da Biblioteca de Skills da Thais disponíveis nesta tarefa e confirme que são sete.
+
+As Skills também podem ser chamadas pelo nome, por exemplo: “Use `csc-social-content` para criar este carrossel”. O Codex pode acioná-las automaticamente quando o pedido corresponder ao escopo.
+
+## Comandos equivalentes
+
+Esta seção serve para diagnóstico; o pedido acima é suficiente na rotina normal.
 
 ```sh
-mkdir -p "$HOME/Documents/Skills"
-git clone git@github.com:athaiscunha/thais-skills-library.git "$HOME/Documents/Skills/thais-skills-library"
+codex plugin marketplace add athaiscunha/thais-skills-library --ref main
+codex plugin add thais-skills-library@thais-skills
 ```
 
-Ou com HTTPS:
+Como o repositório é privado, esses comandos precisam de uma forma de autenticação do GitHub disponível na máquina. Se isso não estiver configurado no terminal, o Codex deve usar o GitHub conectado para preparar uma cópia local e instalar a partir dela.
 
-```sh
-mkdir -p "$HOME/Documents/Skills"
-git clone https://github.com/athaiscunha/thais-skills-library.git "$HOME/Documents/Skills/thais-skills-library"
-```
+## Plano B: instalação individual
 
-## 2. Disponibilizar as Skills ao Codex
+Se a versão do Codex daquela máquina ainda não oferecer plugins, use o instalador de Skills para instalar as sete pastas de `skills/` a partir do mesmo repositório privado. Esse plano mantém o GitHub como fonte de verdade, mas exige instalar as Skills individualmente.
 
-A documentação oficial informa que Skills pessoais podem ser descobertas em `$HOME/.agents/skills` e que pastas de Skills podem ser links simbólicos.
-
-Depois que houver Skills aprovadas em `skills/`, execute:
-
-```sh
-mkdir -p "$HOME/.agents/skills"
-
-for skill_dir in "$HOME/Documents/Skills/thais-skills-library"/skills/*; do
-  [ -f "$skill_dir/SKILL.md" ] || continue
-  skill_name="$(basename "$skill_dir")"
-  ln -sfn "$skill_dir" "$HOME/.agents/skills/$skill_name"
-done
-```
-
-Esse comando cria um atalho para cada Skill; não duplica os arquivos. Quando o clone for atualizado, o Codex passa a usar a versão nova.
-
-## 3. Verificar
-
-- No Codex CLI ou na extensão, use `/skills` ou digite `$` para procurar a Skill.
-- Se uma alteração não aparecer, reinicie o Codex.
-
-## Segunda máquina
-
-Repita exatamente os três passos. Não copie pastas manualmente entre computadores: clone o mesmo repositório e mantenha cada clone atualizado conforme [SYNC.md](SYNC.md).
-
-Fonte: [documentação oficial de Skills do Codex](https://developers.openai.com/codex/skills).
+Fonte: [documentação oficial de plugins](https://learn.chatgpt.com/docs/plugins) e [documentação oficial de criação de plugins](https://learn.chatgpt.com/docs/build-plugins).

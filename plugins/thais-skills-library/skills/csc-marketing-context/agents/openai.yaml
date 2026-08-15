@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contexto de Marketing | Católica SC"
+  short_description: "Organiza fontes e contexto da Católica SC"
+  default_prompt: "Use $csc-marketing-context para montar um contexto factual e atualizado da Católica SC a partir dos documentos e do site oficial."

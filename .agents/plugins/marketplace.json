@@ -1,0 +1,20 @@
+{
+  "name": "thais-skills",
+  "interface": {
+    "displayName": "Skills da Thais"
+  },
+  "plugins": [
+    {
+      "name": "thais-skills-library",
+      "source": {
+        "source": "local",
+        "path": "./plugins/thais-skills-library"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+interface:
+  display_name: "Copy de mídia paga | Católica SC"
+  short_description: "Cria e revisa anúncios pagos da Católica SC"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#FEBD08"
+  default_prompt: "Use $csc-paid-media-copy para criar e validar um banco de anúncios da Católica SC a partir deste briefing."
+policy:
+  allow_implicit_invocation: true
