@@ -1,0 +1,14 @@
+interface:
+  display_name: Copy de mídia paga | Católica SC
+  short_description: Cria e revisa anúncios pagos da Católica SC
+  default_prompt: Use $csc-paid-media-copy para criar e validar um banco de anúncios
+    da Católica SC a partir deste briefing.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

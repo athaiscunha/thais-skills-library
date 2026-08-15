@@ -1,0 +1,59 @@
+# Marca | Católica SC
+
+## Nome e nomenclatura
+
+- Usar `Católica SC` ou `Católica de Santa Catarina`.
+- Não usar `Católica` isoladamente.
+- Tratar `CSC` como sigla interna; não usar em texto corrido de anúncio.
+- Usar `centro universitário` como categoria institucional.
+- Evitar `universidade` e `faculdade` em comunicação institucional ou de produto.
+- Admitir `facul` somente em fala social deliberadamente informal e aprovada; não usar em mídia de Pós.
+- Usar `campi` como plural institucional.
+- Preservar a nomenclatura oficial do produto. Não abreviar o nome apenas para caber; mudar a construção ou pedir autorização.
+
+## Fatos institucionais
+
+Usar somente quando forem relevantes e confirmados para o anúncio:
+
+- unidades em Joinville e Jaraguá do Sul;
+- tradição de ensino e raízes maristas;
+- credenciamento institucional pelo MEC;
+- experiência docente, infraestrutura ou metodologia quando sustentadas pela página atual ou pelo briefing.
+
+Não criar superlativos como `a melhor`, `líder` ou `número 1`. Não converter tradição, credenciamento ou infraestrutura em garantia de emprego, salário ou resultado profissional.
+
+## Voz
+
+Manter uma voz:
+
+- clara, segura e próxima;
+- adulta e compatível com o produto;
+- concreta antes de promocional;
+- acessível sem intimidade forçada;
+- orientada à decisão real da pessoa.
+
+Evitar autoajuda profissional, entusiasmo automático, jargão de marketing, urgência decorativa e gíria usada apenas para parecer jovem.
+
+Para Pós, aplicar também `product-pos.md`.
+
+## Primeira pessoa institucional
+
+Nas redes sociais, personificar a Católica SC em primeira pessoa do singular quando houver uma frase enunciada pela instituição.
+
+- Em texto principal de Meta, usar primeira pessoa institucional em falas de marca: `Na minha Pós...`, `Eu preparo...`, `Quero mostrar...`.
+- Em título nominal, comando, pergunta ou informação curta, não inserir `eu`, `meu` ou `minha` mecanicamente.
+- Em Google, priorizar intenção de busca, clareza e limite; admitir construções nominais, descritivas e imperativas.
+
+Não tratar construção sem pronome como terceira pessoa quando não houver sujeito institucional expresso.
+
+## Marca como argumento
+
+Mencionar a marca quando ela:
+
+- identificar a oferta;
+- responder a `onde fazer?`;
+- reduzir risco percebido;
+- aumentar relevância em busca de marca;
+- diferenciar de forma sustentada.
+
+Não ocupar vários assets com o nome da instituição apenas para preencher o banco.
