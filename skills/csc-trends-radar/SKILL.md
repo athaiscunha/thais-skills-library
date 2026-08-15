@@ -160,7 +160,7 @@ Cada achado recomendado deve incluir evidências com links e datas, mecânica, e
 - usar `csc-channel-strategy` para integrar oportunidades ao plano de canais;
 - usar `editor-anti-aies` para revisar roteiro, texto e legenda;
 - usar `csc-marketing-context` para validar fatos;
-- usar uma Skill de redação social quando existir; esta Skill entrega o conceito e o briefing de adaptação.
+- usar `csc-social-content` para transformar a oportunidade validada em roteiro, texto, legenda e briefing final de produção.
 
 ## Limites
 

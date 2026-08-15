@@ -20,7 +20,8 @@ Ler sempre:
 
 Ler quando o escopo incluir redes sociais:
 
-- `references/social-planning.md`.
+- `references/social-planning.md`;
+- `references/editorial-system.md` para criar, mapear ou governar pilares, editorias e séries recorrentes.
 
 Ler `references/acceptance-tests.md` ao testar ou alterar a Skill.
 
@@ -104,6 +105,8 @@ Transformar pilares em editorias, séries e formatos reconhecíveis. Distinguir:
 
 Eliminar pilares sinônimos e listas em que todos os itens significam “mostrar a qualidade da instituição”.
 
+Usar `editorial-system.md` para separar pilar, editoria, série, formato, pauta e campanha. Auditar editorias existentes antes de criar novas. Tratar `Protagonista`, `Catoliquizz` e `Acontece na CSC` como editorias recorrentes confirmadas pela usuária, mas não completar sua função ou estrutura sem documentos e episódios suficientes.
+
 ### 6. Planejar pela capacidade
 
 Aplicar `social-planning.md` quando houver redes sociais. Definir cadência a partir de:
@@ -161,6 +164,7 @@ Usar tabela apenas quando ela facilitar comparação. Não transformar toda a es
 ## Encaminhamento para outras Skills
 
 - usar `csc-trends-radar` para identificar oportunidades atuais;
+- usar `csc-social-content` para executar publicações e episódios de editorias recorrentes;
 - usar `csc-seo-blog` para pesquisar e escrever artigos;
 - usar `csc-paid-media-copy` para ativos de mídia paga;
 - usar `editor-anti-aies` para o acabamento de linguagem;
