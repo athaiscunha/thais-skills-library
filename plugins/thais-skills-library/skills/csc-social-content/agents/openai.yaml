@@ -1,4 +1,4 @@
 interface:
   display_name: "Conteúdo social | CSC"
   short_description: "Cria conteúdo orgânico pronto para produzir"
-  default_prompt: "Use $csc-social-content para transformar esta pauta em uma publicação orgânica pronta para produzir."
+  default_prompt: "Transforme esta pauta em uma publicação orgânica pronta para produzir."
