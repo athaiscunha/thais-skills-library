@@ -1,0 +1,4 @@
+interface:
+  display_name: "Radar de trends | CSC"
+  short_description: "Detecta e adapta trends úteis à CSC"
+  default_prompt: "Use $csc-trends-radar para avaliar trends atuais e sugerir aplicações à Católica SC."

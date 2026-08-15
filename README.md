@@ -61,5 +61,9 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 
 - [`csc-marketing-context`](skills/csc-marketing-context/): consolidação e auditoria de contexto, documentos e fontes oficiais da Católica SC.
 - [`csc-paid-media-copy`](skills/csc-paid-media-copy/): criação, revisão e validação de copy de mídia paga da Católica SC para Meta Ads, Google Search e Performance Max.
+- [`editor-anti-aies`](skills/editor-anti-aies/): auditoria, redação e revisão de linguagem artificial ou redundante, sem atribuir autoria nem apagar a voz.
+- [`csc-channel-strategy`](skills/csc-channel-strategy/): estratégia e planejamento de canais e conteúdo, com ênfase em social orgânico.
+- [`csc-seo-blog`](skills/csc-seo-blog/): pesquisa, brief, redação e revisão editorial de artigos SEO da Católica SC.
+- [`csc-trends-radar`](skills/csc-trends-radar/): radar manual e atual de trends com evidência, validade, risco e adaptação institucional.
 
 Nenhuma Skill de terceiros está instalada. Ideias externas só entram depois de revisão, seleção e reescrita para o nosso contexto.
