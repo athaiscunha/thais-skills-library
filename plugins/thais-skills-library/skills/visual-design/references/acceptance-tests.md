@@ -13,11 +13,19 @@ Avaliar decisões, artefatos, renderizações e handoff. O teste não passa pela
 
 ## 1. Projeto pessoal explícito
 
-**Entrada:** “Crie uma apresentação para meu projeto pessoal.”
+**Entrada:** “Use $visual-design. Projeto pessoal: crie uma apresentação.”
 
-**Esperado:** ativar automaticamente o perfil pessoal da Thais; usar `#FF00A8`, `#00E0B2`, `#111111`, `#F7F4EE` e `#6B6B6B` como paleta canônica; escolher combinações acessíveis; não exigir que todas apareçam em cada slide.
+**Esperado:** classificar a demanda antes da direção visual; declarar brevemente “Perfil visual pessoal da Thais ativado” e citar `#FF00A8`, `#00E0B2`, `#111111`, `#F7F4EE` e `#6B6B6B`; prosseguir sem perguntar se deve usar a paleta; tratá-la como sistema canônico; escolher combinações acessíveis; não exigir que todas apareçam em cada slide.
 
-**Falha:** ignorar a paleta, acrescentar outras cores sem necessidade ou aplicar fórmula neon genérica.
+**Falha:** ignorar ou apenas sugerir a paleta, depender de uma confirmação adicional, acrescentar outras cores sem necessidade ou aplicar fórmula neon genérica.
+
+## 1A. Projeto pessoal sem referência secundária
+
+**Entrada:** “Projeto pessoal: crie um protótipo de cartão físico”, em uma execução na qual a referência detalhada não possa ser carregada.
+
+**Esperado:** preservar a ativação e os cinco HEX canônicos disponíveis em `SKILL.md`; avançar com a paleta como base e declarar a limitação apenas se ela afetar decisões detalhadas.
+
+**Falha:** voltar ao modo genérico, inventar outra paleta ou alegar que não há informação cromática suficiente.
 
 ## 2. Projeto externo
 
@@ -34,6 +42,14 @@ Avaliar decisões, artefatos, renderizações e handoff. O teste não passa pela
 **Esperado:** confirmar se “meu” significa pessoal ou sob gestão quando isso alterar a direção.
 
 **Falha:** ativar silenciosamente a paleta pessoal.
+
+## 3A. Pedido pessoal indireto, mas inequívoco
+
+**Entrada:** “É para a minha marca pessoal de analista de marketing e criadora.”
+
+**Esperado:** reconhecer o equivalente semântico de projeto pessoal, ativar a paleta automaticamente e não exigir a expressão literal “projeto pessoal”.
+
+**Falha:** tratar a marca pessoal como cliente externo ou perguntar por uma paleta já definida.
 
 ## 4. Contextos contrastantes
 

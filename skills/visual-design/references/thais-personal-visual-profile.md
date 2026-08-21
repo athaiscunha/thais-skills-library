@@ -2,31 +2,19 @@
 
 ## Ativação
 
-Usar este perfil quando a usuária identificar a entrega como projeto pessoal, marca pessoal, trabalho autoral ou material pessoal sem uma identidade externa. Não ativar somente porque ela pediu que algo fosse feito “para mim”. Não ativar em trabalhos da Católica SC, de cliente, parceiro ou outra marca sem pedido explícito.
+Esta referência complementa o modo pessoal definido em `SKILL.md`. Usá-la depois que a demanda tiver sido classificada como projeto pessoal, marca pessoal, trabalho autoral ou material pessoal da Thais sem uma identidade externa. Não ativar somente porque ela pediu que algo fosse feito “para mim”. Não ativar em trabalhos da Católica SC, de cliente, parceiro ou outra marca sem pedido explícito.
 
 Se a frase “meu projeto” puder significar apenas “projeto sob minha gestão”, e a paleta alterar materialmente a entrega, confirmar em uma pergunta curta.
 
 ## Paleta canônica
 
-Usar estes valores exatos como fonte de verdade:
+Os nomes, tokens e valores HEX canônicos estão definidos no núcleo de `SKILL.md` e prevalecem como fonte única de verdade. Nesta referência, aplicar seus papéis preferenciais:
 
-| Token | Nome | Hex | Papel preferencial |
-|---|---|---:|---|
-| `magenta-acido` | Magenta ácido | `#FF00A8` | acento principal, ênfase, sinal, CTA e gesto expressivo |
-| `verde-cerceta-acido` | Verde-cerceta ácido | `#00E0B2` | acento secundário, contraste, dado, estado e contraponto |
-| `tinta` | Tinta | `#111111` | texto principal, fundo escuro, estrutura e alto contraste |
-| `papel` | Papel | `#F7F4EE` | fundo claro principal e respiro |
-| `cinza` | Cinza | `#6B6B6B` | texto secundário, legenda, linha e informação de apoio |
-
-Tokens sugeridos para implementação:
-
-```css
---thais-magenta-acido: #FF00A8;
---thais-verde-cerceta-acido: #00E0B2;
---thais-tinta: #111111;
---thais-papel: #F7F4EE;
---thais-cinza: #6B6B6B;
-```
+- `magenta-acido`: acento principal, ênfase, sinal, CTA e gesto expressivo;
+- `verde-cerceta-acido`: acento secundário, contraste, dado, estado e contraponto;
+- `tinta`: texto principal, fundo escuro, estrutura e alto contraste;
+- `papel`: fundo claro principal e respiro;
+- `cinza`: texto secundário, legenda, linha e informação de apoio.
 
 ## Princípio de uso
 

@@ -690,14 +690,16 @@
       ],
       "expected": [
         "Tipo activation — visual-design deve acionar e ser dona da direção de arte; a Skill de apresentações deve apoiar a execução e a verificação do arquivo.",
-        "Ativa o perfil visual pessoal da Thais somente porque o contexto pessoal foi explicitado e usa a paleta canônica com combinações acessíveis.",
+        "Classifica a demanda como projeto pessoal, informa brevemente que o perfil visual pessoal da Thais foi ativado e cita os cinco HEX canônicos sem pedir nova confirmação.",
+        "Usa a paleta pessoal como sistema cromático canônico, com combinações acessíveis e sem obrigar todas as cores a aparecerem em cada slide.",
         "Transforma o conteúdo em narrativa, define a função dos slides e cria famílias de composição em vez de preencher um template único.",
         "Relaciona sofisticação a hierarquia, tipografia, grid, proporção, edição e acabamento, sem recorrer automaticamente a luxo, vazio ou neutralidade.",
         "Executa o arquivo editável, renderiza o conjunto, inspeciona miniaturas e slides em tamanho real, corrige e verifica novamente.",
         "Entrega fontes, assets, regras, limitações e status suficientes para continuidade por outra profissional."
       ],
       "reject_if": [
-        "Ignora ou altera arbitrariamente a paleta pessoal canônica.",
+        "Ignora, trata como opcional ou altera arbitrariamente a paleta pessoal canônica.",
+        "Pede confirmação para ativar o perfil apesar de o contexto pessoal estar explícito.",
         "Entrega somente recomendações ou um moodboard quando foi solicitado um arquivo.",
         "Repete um layout genérico em todos os slides ou trata minimalismo como vazio.",
         "Declara o deck pronto sem renderização e inspeção completas."

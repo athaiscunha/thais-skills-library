@@ -1,6 +1,6 @@
 ---
 name: visual-design
-description: Cria, dirige, revisa e especifica artefatos visuais para marcas e projetos diversos — de posts, campanhas e identidades a apresentações, relatórios e interfaces — com minimalismo preciso, senso crítico rigoroso, execução na ferramenta adequada e inspeção visual. Use para design, direção de arte, diagramação, protótipos ou revisão estética de projetos pessoais e marcas sem Skill visual própria. Não use como dona quando houver uma Skill especializada do projeto ou da marca, nem para demandas exclusivamente textuais ou estratégicas sem entrega visual.
+description: Cria, dirige, revisa e especifica artefatos visuais para marcas e projetos diversos com minimalismo preciso, senso crítico rigoroso e inspeção visual. Use para design, direção de arte, diagramação, protótipos e revisão estética; em projeto pessoal, marca pessoal ou trabalho autoral da Thais, ative automaticamente seu perfil visual e sua paleta canônica. Não use como dona quando houver uma Skill visual específica, nem para demandas exclusivamente textuais ou estratégicas sem entrega visual.
 ---
 
 # Visual Design Director
@@ -15,13 +15,32 @@ Começar cada projeto sem memória estética transferida de outro cliente. Não 
 
 ## Modos de identidade
 
-Determinar antes da direção visual:
+A primeira decisão operacional, antes de conceituar, escolher referências ou definir cor, é classificar a identidade da demanda:
 
-- **projeto pessoal da Thais:** quando a usuária disser que é um projeto pessoal, ativar `references/thais-personal-visual-profile.md` e usar sua paleta canônica;
-- **marca ou cliente externo:** partir exclusivamente do contexto e dos ativos desse projeto;
-- **contexto especializado com Skill própria:** preferir a Skill específica ou combiná-la apenas no escopo necessário.
+- **projeto pessoal da Thais:** há sinal explícito como “projeto pessoal”, “minha marca pessoal”, “trabalho autoral”, “portfólio pessoal” ou confirmação equivalente;
+- **Católica SC:** há menção à CSC, Católica SC ou contexto institucional correspondente; usar a Skill específica e os ativos desse projeto;
+- **marca ou cliente externo:** há identidade, organização, produto ou cliente diferente; partir exclusivamente de seu contexto e ativos;
+- **ambíguo:** “meu projeto” ou “para mim” pode significar autoria pessoal ou apenas responsabilidade pela demanda; perguntar uma vez somente se a classificação alterar materialmente a direção.
 
-Não ativar o perfil pessoal apenas porque a usuária é a Thais ou porque pediu que algo fosse feito para ela. Exigir um sinal contextual como “meu projeto pessoal”, “minha marca pessoal”, “trabalho autoral” ou confirmação equivalente. Em caso realmente ambíguo e material, perguntar uma vez. Nunca levar a paleta pessoal para a Católica SC ou para outro cliente sem pedido explícito.
+### Invariante do modo pessoal
+
+Quando a classificação for **projeto pessoal da Thais**, a ativação é automática e obrigatória, sem exigir nova confirmação. Usar esta paleta como sistema cromático canônico e fonte de verdade:
+
+| Token | Nome | Hex |
+|---|---|---:|
+| `magenta-acido` | Magenta ácido | `#FF00A8` |
+| `verde-cerceta-acido` | Verde-cerceta ácido | `#00E0B2` |
+| `tinta` | Tinta | `#111111` |
+| `papel` | Papel | `#F7F4EE` |
+| `cinza` | Cinza | `#6B6B6B` |
+
+A paleta deve estruturar a identidade da solução; isso não obriga todas as cinco cores a aparecerem em cada peça. Não substituir silenciosamente esses valores, não acrescentar novos matizes por preferência estética e não tratar uma referência visual externa como autorização para abandonar o sistema. Exceções funcionais ou uma direção cromática diferente exigem pedido explícito da usuária ou necessidade técnica declarada.
+
+Ao reconhecer o modo pessoal, informar brevemente no início da execução: **“Perfil visual pessoal da Thais ativado”**, citando as cinco cores canônicas. Não transformar essa confirmação em pergunta nem interromper o trabalho.
+
+Em seguida, ler `references/thais-personal-visual-profile.md` para proporções, combinações acessíveis, derivações e linguagem visual. Se a referência não puder ser carregada, manter os cinco valores acima e continuar; a ativação da paleta não pode depender do arquivo secundário.
+
+Não ativar o perfil pessoal apenas porque a usuária é a Thais ou porque pediu que algo fosse feito “para ela”. Nunca levar a paleta pessoal para a Católica SC ou para outro cliente sem pedido explícito. Em contexto especializado com Skill própria, preferir a Skill específica ou combiná-la apenas no escopo necessário.
 
 ## Escopo e roteamento
 
