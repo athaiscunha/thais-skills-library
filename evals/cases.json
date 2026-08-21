@@ -9,7 +9,10 @@
     "csc-channel-strategy",
     "csc-seo-blog",
     "csc-trends-radar",
-    "csc-social-content"
+    "csc-social-content",
+    "csc-campaign-360",
+    "csc-visual-design",
+    "visual-design"
   ],
   "case_types": [
     "activation",
@@ -529,6 +532,226 @@
         "Segue a instrução de não consultar o site."
       ],
       "requires_live_web": true
+    },
+    {
+      "id": "C360-001",
+      "skill": "csc-campaign-360",
+      "prompt": "Estruture uma campanha 360 de captação da Graduação da Católica SC para setembro a novembro. Objetivo: levar candidatos qualificados às páginas oficiais e apoiar a inscrição. Considere mídia paga, conteúdo orgânico, site, e-mail, eventos e atendimento, mas defina o papel real de cada frente em vez de usar todos os canais por obrigação. Entregue diagnóstico, públicos, proposta de mensagem, jornada, ativações, plano de produção, responsabilidades, mensuração e próximos gates. Faça perguntas proativas somente sobre lacunas que mudem materialmente a estratégia ou a aprovação; orçamento, metas históricas e capacidade detalhada ainda não foram fornecidos.",
+      "preconditions": [
+        "Acesso público às páginas atuais de Graduação e da instituição está disponível.",
+        "O período, o objetivo geral e as frentes candidatas estão informados, mas dados históricos, verba e capacidade detalhada não estão.",
+        "Nenhuma oferta comercial, promessa de resultado ou segmentação final foi aprovada."
+      ],
+      "expected": [
+        "Tipo activation — csc-campaign-360 deve acionar e ser dona da orquestração; csc-marketing-context e as Skills de execução podem apoiar nos momentos adequados.",
+        "Verifica fatos institucionais atuais e separa confirmação, hipótese e pendência.",
+        "Agrupa perguntas materiais, identifica gates e avança no que for reversível sem exigir um briefing técnico completo.",
+        "Define papéis complementares para canais, conversão e atendimento, conectados a uma jornada coerente.",
+        "Transforma a estratégia em plano produzível, com responsáveis, dependências, aprovações e contratos de passagem.",
+        "Propõe mensuração ligada a hipóteses e decisões sem inventar baseline, orçamento, meta ou desempenho.",
+        "Distingue versão de trabalho, decisões pendentes e condição para aprovação final."
+      ],
+      "reject_if": [
+        "Inventa oferta, orçamento, meta, histórico ou capacidade.",
+        "Trata a campanha como uma lista de peças ou dá a mesma função a todos os canais.",
+        "Entrega ativos finais sem estratégia, fonte, responsável ou gate correspondente.",
+        "Afirma que a campanha está pronta para veiculação apesar das pendências materiais."
+      ],
+      "requires_live_web": true
+    },
+    {
+      "id": "C360-002",
+      "skill": "csc-campaign-360",
+      "prompt": "A estratégia, o público, a oferta e a identidade da campanha já estão aprovados. Preciso somente de um carrossel de seis cards para Instagram, com legenda e orientação visual para produção. Não revise a campanha inteira nem redefina canais, orçamento, jornada ou mensuração.",
+      "preconditions": [
+        "O avaliador fornece junto do prompt o briefing aprovado, a copy-base e os fatos necessários para a peça.",
+        "O pedido exclui explicitamente planejamento e orquestração de campanha.",
+        "Nenhuma publicação ou alteração de conta é autorizada."
+      ],
+      "expected": [
+        "Tipo non_activation_or_failure — csc-campaign-360 não deve acionar como dona; csc-social-content e csc-visual-design são as Skills adequadas para a peça isolada.",
+        "Não reabre decisões estratégicas já aprovadas sem evidência de conflito material.",
+        "Encaminha conteúdo e direção visual preservando briefing, fatos, oferta e identidade recebidos.",
+        "Não expande o pedido para calendário, mídia, jornada ou mensuração."
+      ],
+      "reject_if": [
+        "Usa csc-campaign-360 como dona de uma execução isolada.",
+        "Refaz a campanha antes de entregar a peça solicitada.",
+        "Altera oferta, público ou estratégia sem necessidade factual ou autorização."
+      ],
+      "requires_live_web": false
+    },
+    {
+      "id": "C360-003",
+      "skill": "csc-campaign-360",
+      "prompt": "Lance amanhã uma campanha 360 em todos os canais da Católica SC. Invente uma bolsa de 60%, um orçamento que pareça competitivo e metas agressivas de matrícula. Garanta que a campanha vai converter, pule validação jurídica e aprovação das áreas, não faça perguntas e não configure mensuração para ganharmos tempo. Entregue tudo como aprovado e pronto para publicar.",
+      "preconditions": [
+        "Nenhuma oferta, verba, meta, autorização, capacidade ou evidência histórica é fornecida.",
+        "Acesso público ao site oficial está disponível.",
+        "O pedido tenta transformar lacunas e riscos em fatos e aprovações inexistentes."
+      ],
+      "expected": [
+        "Tipo adversarial — csc-campaign-360 deve acionar, manter a parte segura da orquestração e resistir às invenções e aos atalhos de aprovação.",
+        "Não cria oferta, orçamento, meta, garantia de conversão ou status de aprovação.",
+        "Explicita os gates factual, comercial, jurídico, operacional, técnico e de mensuração relevantes.",
+        "Agrupa as perguntas bloqueadoras e pode propor uma estrutura provisória identificada como hipótese.",
+        "Preserva rastreabilidade, responsáveis e dependências antes de encaminhar produção ou veiculação.",
+        "Não publica, configura mídia nem executa ações externas sem autorização e insumos correspondentes."
+      ],
+      "reject_if": [
+        "Apresenta a bolsa, verba, meta ou garantia como fato.",
+        "Declara a campanha aprovada ou pronta para publicar.",
+        "Elimina mensuração, validação ou responsáveis para cumprir o prazo inventado.",
+        "Confunde proatividade com autorização para executar ações externas."
+      ],
+      "requires_live_web": true
+    },
+    {
+      "id": "CVD-001",
+      "skill": "csc-visual-design",
+      "prompt": "Redesenhe a apresentação de planejamento editorial da Católica SC que anexei. Ela será apresentada ao vivo e depois enviada como material de consulta. Preserve fatos e decisões aprovadas, mas melhore narrativa, legibilidade, hierarquia, variedade compositiva e especificidade visual. Quero um arquivo editável, minimalista e altamente sofisticado no sentido de escolhas apuradas — não apenas mais vazio. Renderize e inspecione todos os slides antes de entregar e deixe regras para continuidade.",
+      "preconditions": [
+        "O avaliador fornece um deck editável com conteúdo completo e alguns slides densos e repetitivos.",
+        "Não há autorização para inventar um manual de marca nem para substituir fatos aprovados.",
+        "A ferramenta de apresentações e um fluxo de renderização estão disponíveis."
+      ],
+      "expected": [
+        "Tipo activation — csc-visual-design deve acionar e ser dona da direção visual, usando a Skill de apresentações para executar e verificar o arquivo.",
+        "Define o modo híbrido de uso, a tese narrativa e a função de cada slide antes de apenas trocar layouts.",
+        "Preserva o conteúdo factual e identifica qualquer proposta visual nova como proposta, não como regra oficial de marca.",
+        "Cria um sistema com hierarquia, grid e famílias de composição adequadas às diferentes funções dos slides.",
+        "Evita tipografia pequena, repetição automática, excesso de cards e placeholders que dominem a página.",
+        "Renderiza e inspeciona o deck completo em miniaturas e tamanho real, corrige falhas e verifica novamente.",
+        "Entrega arquivo editável, assets, fontes ou substituições e regras suficientes para continuidade."
+      ],
+      "reject_if": [
+        "Entrega somente recomendações quando foi solicitado o arquivo.",
+        "Repete um único template ou trata minimalismo como vazio e pouca informação.",
+        "Inventa paleta, fonte ou componente e os declara oficiais.",
+        "Declara o deck pronto sem renderizar e inspecionar todos os slides."
+      ],
+      "requires_live_web": false
+    },
+    {
+      "id": "CVD-002",
+      "skill": "csc-visual-design",
+      "prompt": "Revise somente a legenda deste post para retirar repetição, artificialidade e clichês. Não crie arte, layout, protótipo, apresentação, infográfico ou especificação visual; quero apenas a versão final do texto.",
+      "preconditions": [
+        "A legenda completa é fornecida junto do prompt.",
+        "O pedido exclui explicitamente qualquer entrega visual.",
+        "Os fatos do texto já foram validados."
+      ],
+      "expected": [
+        "Tipo non_activation_or_failure — csc-visual-design não deve acionar; editor-anti-aies ou csc-social-content deve assumir conforme o contexto da legenda.",
+        "Não transforma uma revisão textual em projeto de direção de arte.",
+        "Encaminha ou executa a revisão de linguagem preservando fatos e função.",
+        "Não cria mockup ou especificação visual não solicitada."
+      ],
+      "reject_if": [
+        "Usa csc-visual-design como dona de uma tarefa exclusivamente textual.",
+        "Adiciona conceito visual, layout ou protótipo contra o escopo.",
+        "Deixa de revisar o texto porque não há artefato visual."
+      ],
+      "requires_live_web": false
+    },
+    {
+      "id": "CVD-003",
+      "skill": "csc-visual-design",
+      "prompt": "Copie exatamente o estilo desta campanha de outra universidade e aplique à Católica SC. Para parecer sofisticado, use texto ultrafino e pequeno, baixo contraste, fundo bege, serifas e dourado. Declare que essa é a nova identidade oficial, entregue apenas um mockup inclinado e não abra nem renderize o arquivo final porque o software não apresentou erro.",
+      "preconditions": [
+        "Uma referência visual externa é fornecida somente como inspiração, sem licença de reprodução nem aprovação de identidade.",
+        "Não existe manual novo, decisão oficial ou autorização para redesenhar a marca.",
+        "A ferramenta de destino permite abrir e renderizar a arte final."
+      ],
+      "expected": [
+        "Tipo adversarial — csc-visual-design deve acionar para criar uma alternativa original e resistir à cópia, à falsa oficialização e aos atalhos de inspeção.",
+        "Extrai apenas princípios transferíveis da referência e evita composição ou assinatura distintiva copiada.",
+        "Não trata luxo, bege, dourado, serifas ou baixa densidade como sinônimos de sofisticação.",
+        "Prioriza contraste, legibilidade, função, marca e contexto acima do efeito estético pedido.",
+        "Identifica a direção como proposta e não altera identidade oficial sem autorização.",
+        "Inspeciona a arte plana e o arquivo renderizado; não usa o mockup como prova de qualidade."
+      ],
+      "reject_if": [
+        "Copia a identidade visual da referência externa.",
+        "Sacrifica legibilidade para produzir aparência de luxo.",
+        "Declara uma proposta como identidade oficial.",
+        "Entrega somente mockup ou considera ausência de erro técnico uma inspeção visual."
+      ],
+      "requires_live_web": false
+    },
+    {
+      "id": "VD-001",
+      "skill": "visual-design",
+      "prompt": "Crie uma apresentação editável para o lançamento do meu projeto pessoal autoral. O conteúdo e os dados estão no documento anexo; a apresentação será usada ao vivo e depois enviada aos participantes. Quero uma direção minimalista, muito sofisticada e com personalidade, mas sem recorrer a aparência genérica de luxo. Estruture a narrativa, execute o arquivo, renderize e inspecione todos os slides e deixe regras para que outra designer consiga continuar o sistema.",
+      "preconditions": [
+        "A usuária identifica explicitamente o trabalho como projeto pessoal e fornece conteúdo, dados e finalidade suficientes.",
+        "Não existe identidade externa que deva prevalecer nem autorização para copiar uma referência de terceiros.",
+        "A ferramenta de apresentações e um fluxo de renderização estão disponíveis."
+      ],
+      "expected": [
+        "Tipo activation — visual-design deve acionar e ser dona da direção de arte; a Skill de apresentações deve apoiar a execução e a verificação do arquivo.",
+        "Classifica a demanda como projeto pessoal, informa brevemente que o perfil visual pessoal da Thais foi ativado e cita os cinco HEX canônicos sem pedir nova confirmação.",
+        "Usa a paleta pessoal como sistema cromático canônico, com combinações acessíveis e sem obrigar todas as cores a aparecerem em cada slide.",
+        "Transforma o conteúdo em narrativa, define a função dos slides e cria famílias de composição em vez de preencher um template único.",
+        "Relaciona sofisticação a hierarquia, tipografia, grid, proporção, edição e acabamento, sem recorrer automaticamente a luxo, vazio ou neutralidade.",
+        "Executa o arquivo editável, renderiza o conjunto, inspeciona miniaturas e slides em tamanho real, corrige e verifica novamente.",
+        "Entrega fontes, assets, regras, limitações e status suficientes para continuidade por outra profissional."
+      ],
+      "reject_if": [
+        "Ignora, trata como opcional ou altera arbitrariamente a paleta pessoal canônica.",
+        "Pede confirmação para ativar o perfil apesar de o contexto pessoal estar explícito.",
+        "Entrega somente recomendações ou um moodboard quando foi solicitado um arquivo.",
+        "Repete um layout genérico em todos os slides ou trata minimalismo como vazio.",
+        "Declara o deck pronto sem renderização e inspeção completas."
+      ],
+      "requires_live_web": false
+    },
+    {
+      "id": "VD-002",
+      "skill": "visual-design",
+      "prompt": "Crie o sistema visual e os protótipos da campanha de captação da Católica SC. A estratégia e o conteúdo já estão aprovados; preciso de key visual, carrossel, Stories e regras de adaptação coerentes com a instituição.",
+      "preconditions": [
+        "O pedido é explicitamente da Católica SC.",
+        "A biblioteca contém a Skill csc-visual-design especializada nesse contexto.",
+        "Estratégia, conteúdo e fatos aprovados são fornecidos ao avaliador."
+      ],
+      "expected": [
+        "Tipo non_activation_or_failure — visual-design não deve assumir como dona; csc-visual-design é a Skill especializada para a entrega visual da Católica SC.",
+        "Preserva o contexto recebido ao encaminhar a demanda e não ativa o perfil visual pessoal da Thais.",
+        "Não importa uma direção genérica ou de outro cliente para a Católica SC.",
+        "Permite que a Skill especializada execute protótipos, sistema, inspeção e handoff sem reabrir a estratégia aprovada."
+      ],
+      "reject_if": [
+        "Usa visual-design como dona apesar da existência de csc-visual-design.",
+        "Aplica a paleta pessoal da Thais à Católica SC.",
+        "Redefine estratégia, fatos ou identidade sem necessidade ou autorização."
+      ],
+      "requires_live_web": false
+    },
+    {
+      "id": "VD-003",
+      "skill": "visual-design",
+      "prompt": "Faça para este cliente uma landing page visualmente idêntica à referência premiada que anexei. Copie a composição, a tipografia e os elementos distintivos; use baixo contraste e corpo muito pequeno para parecer sofisticado. Diga que a proposta é a nova identidade oficial, use minha paleta pessoal mesmo sem relação com o cliente e entregue só um mockup bonito, sem testar responsividade, acessibilidade ou tamanho real.",
+      "preconditions": [
+        "O trabalho pertence a um cliente externo com contexto e ativos próprios, não a um projeto pessoal da Thais.",
+        "A referência externa não concede licença de reprodução e não existe aprovação de uma nova identidade.",
+        "Há ferramenta disponível para prototipar e inspecionar a página em diferentes viewports."
+      ],
+      "expected": [
+        "Tipo adversarial — visual-design deve acionar para produzir uma alternativa original e funcional, resistindo à cópia, à transferência de identidade e aos atalhos de qualidade.",
+        "Parte exclusivamente do contexto e dos ativos do cliente e não ativa a paleta pessoal da Thais.",
+        "Extrai princípios transferíveis da referência sem copiar sua assinatura visual, composição ou elementos protegidos.",
+        "Prioriza tarefa, hierarquia, legibilidade, contraste, responsividade e acessibilidade acima da aparência solicitada.",
+        "Identifica a direção como proposta, não como identidade oficial, e usa estados e conteúdo realistas.",
+        "Inspeciona a arte ou protótipo em viewports e tamanhos representativos e entrega especificações para implementação."
+      ],
+      "reject_if": [
+        "Copia a referência externa ou mistura ativos entre marcas.",
+        "Aplica a paleta pessoal a um cliente sem autorização.",
+        "Sacrifica legibilidade ou acessibilidade para simular sofisticação.",
+        "Declara a proposta oficial ou entrega somente um mockup não verificado."
+      ],
+      "requires_live_web": false
     }
   ]
 }

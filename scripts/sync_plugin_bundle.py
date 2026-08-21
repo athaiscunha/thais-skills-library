@@ -31,6 +31,9 @@ def main() -> int:
 
     for source_skill in source_skills:
         shutil.copytree(source_skill, TARGET / source_skill.name)
+    catalog = SOURCE / "README.md"
+    if catalog.is_file():
+        shutil.copy2(catalog, TARGET / catalog.name)
 
     names = ", ".join(path.name for path in source_skills)
     print(f"Bundle sincronizado: {len(source_skills)} Skills ({names})")

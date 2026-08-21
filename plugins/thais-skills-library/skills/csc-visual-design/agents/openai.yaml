@@ -1,0 +1,4 @@
+interface:
+  display_name: "CSC Visual Design"
+  short_description: "Direção visual sofisticada para a Católica SC"
+  default_prompt: "Use $csc-visual-design para criar ou revisar esta entrega visual da Católica SC com direção de arte e inspeção rigorosas."

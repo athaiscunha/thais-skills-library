@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Design Director"
+  short_description: "Direção de arte rigorosa com modo pessoal"
+  default_prompt: "Use $visual-design para criar ou revisar esta entrega; se eu indicar projeto pessoal, marca pessoal ou trabalho autoral da Thais, ative automaticamente meu perfil visual e minha paleta canônica."

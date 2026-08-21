@@ -13,6 +13,9 @@ Este diretório contém somente Skills revisadas e prontas para uso.
 | [`csc-seo-blog`](csc-seo-blog/) | 0.2.0 | criação própria | Pesquisa e redação SEO com pacote rastreável para desdobramento em outros canais |
 | [`csc-trends-radar`](csc-trends-radar/) | 0.2.0 | criação própria | Radar manual com evidência, histórico entre rodadas e encaminhamento para execução |
 | [`csc-social-content`](csc-social-content/) | 0.2.0 | criação própria | Conteúdo orgânico com bloqueio de ancoragem decorativa e briefing completo de produção |
+| [`csc-campaign-360`](csc-campaign-360/) | 0.1.0 | criação própria | Campanhas integradas com briefing proativo, gates, produção, mensuração e aprendizagem |
+| [`csc-visual-design`](csc-visual-design/) | 0.1.0 | criação própria | Direção visual editorial com crítica, execução na ferramenta adequada e inspeção do resultado |
+| [`visual-design`](visual-design/) | 0.1.0 | criação própria | Direção de arte geral, neutra entre marcas, com modo pessoal explícito e inspeção do resultado |
 
 ## Convenção de pastas
 

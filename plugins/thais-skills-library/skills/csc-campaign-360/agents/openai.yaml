@@ -1,0 +1,4 @@
+interface:
+  display_name: "Campanha 360 CSC"
+  short_description: "Orquestra campanhas integradas da Católica SC"
+  default_prompt: "Use $csc-campaign-360 para estruturar uma campanha integrada da Católica SC a partir da minha demanda."
