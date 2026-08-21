@@ -190,15 +190,24 @@ def check_paid_asset_auditor() -> list[str]:
         "Descrição\t20\t  texto   repetido  \n"
         "Título\t1\te\u0301\n"
     )
-    with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".tsv") as handle:
-        handle.write(sample)
-        handle.flush()
+    sample_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            "w", encoding="utf-8", suffix=".tsv", delete=False
+        ) as handle:
+            handle.write(sample)
+            sample_path = Path(handle.name)
         result = subprocess.run(
-            [sys.executable, str(script), handle.name],
+            [sys.executable, str(script), str(sample_path)],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
+    finally:
+        if sample_path is not None:
+            sample_path.unlink(missing_ok=True)
     expected_fragments = (
         "OK\tTítulo\t[10/10]",
         "ACIMA\tTítulo",
@@ -206,7 +215,11 @@ def check_paid_asset_auditor() -> list[str]:
         "OK\tTítulo\t[1/1]",
     )
     if result.returncode != 1 or any(fragment not in result.stdout for fragment in expected_fragments):
-        return ["csc-paid-media-copy: audit_assets.py falhou no autoteste"]
+        details = (result.stderr or result.stdout).strip().replace("\n", " | ")
+        return [
+            "csc-paid-media-copy: audit_assets.py falhou no autoteste "
+            f"(exit={result.returncode}; saída={details or 'vazia'})"
+        ]
     return []
 
 

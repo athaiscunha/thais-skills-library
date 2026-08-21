@@ -31,6 +31,8 @@ def normalize_asset(asset: str) -> str:
 
 
 def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="backslashreplace")
     rows = list(csv.reader(io.StringIO(load_text()), delimiter="\t"))
     header = [c.strip().casefold() for c in rows[0][:3]] if rows else []
     if header in (["field", "limit", "text"], ["campo", "limite", "texto"]):

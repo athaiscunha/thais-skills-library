@@ -4,7 +4,7 @@ Repositório público que funciona como **fonte de verdade** para as Skills pess
 
 As Skills instaladas localmente são cópias de trabalho. A versão oficial é sempre a que está neste repositório, na branch `main`.
 
-As sete Skills também são distribuídas juntas pelo plugin **Biblioteca de Skills da Thais**. Para instalar ou atualizar o pacote em outra máquina, veja [docs/INSTALLATION.md](docs/INSTALLATION.md).
+As dez Skills também são distribuídas juntas pelo plugin **Biblioteca de Skills da Thais**. Para instalar ou atualizar o pacote em outra máquina, veja [docs/INSTALLATION.md](docs/INSTALLATION.md).
 
 ## Estrutura
 
@@ -24,7 +24,7 @@ As sete Skills também são distribuídas juntas pelo plugin **Biblioteca de Ski
 ├── .agents/plugins/marketplace.json
 ├── plugins/thais-skills-library/
 │   ├── .codex-plugin/plugin.json
-│   └── skills/               # pacote gerado das sete Skills
+│   └── skills/               # pacote gerado das dez Skills
 ├── scripts/
 │   └── sync_plugin_bundle.py
 ├── reviews/
@@ -66,13 +66,13 @@ O arquivo `SKILL.md` é obrigatório e deve conter, no mínimo, `name` e `descri
 
 Depois que o plugin estiver instalado e carregado na superfície compatível, as Skills podem ser acionadas automaticamente pelo pedido ou selecionadas explicitamente.
 
-- No ChatGPT, selecione a Skill pelo menu de `@` quando ela estiver disponível nessa superfície.
-- No Codex, use `$nome-da-skill`, por exemplo `$csc-paid-media-copy`.
+- No ChatGPT, use `@` para selecionar o plugin ou uma de suas Skills internas.
+- No Codex, digite `$` ou use `/skills` e selecione o nome efetivamente carregado. Skills do plugin podem aparecer com namespace, por exemplo `$thais-skills-library:csc-paid-media-copy`.
 - Ao chamar apenas o plugin, o modelo pode escolher uma Skill interna por roteamento semântico, mas a seleção explícita é preferível quando você quer garantir qual Skill será usada.
 
 ## Começar
 
-- Instalação das sete Skills de uma vez: [docs/INSTALLATION.md](docs/INSTALLATION.md)
+- Instalação das dez Skills de uma vez: [docs/INSTALLATION.md](docs/INSTALLATION.md)
 - Rotina para manter as duas máquinas iguais: [docs/SYNC.md](docs/SYNC.md)
 - Política de fontes da Católica SC: [docs/SOURCE_POLICY.md](docs/SOURCE_POLICY.md)
 - Convenções de commits e versões: [docs/VERSIONING.md](docs/VERSIONING.md)
@@ -88,5 +88,8 @@ Depois que o plugin estiver instalado e carregado na superfície compatível, as
 - [`csc-seo-blog`](skills/csc-seo-blog/): pesquisa, brief, redação e revisão editorial de artigos SEO da Católica SC.
 - [`csc-trends-radar`](skills/csc-trends-radar/): radar manual e atual de trends com evidência, validade, risco e adaptação institucional.
 - [`csc-social-content`](skills/csc-social-content/): criação e revisão de conteúdo orgânico, editorias recorrentes e briefings prontos para produção.
+- [`csc-campaign-360`](skills/csc-campaign-360/): planejamento e orquestração de campanhas integradas, do briefing à aprendizagem.
+- [`csc-visual-design`](skills/csc-visual-design/): direção de arte, design editorial e inspeção visual de peças, sistemas e apresentações.
+- [`visual-design`](skills/visual-design/): direção de arte geral para projetos pessoais e marcas sem Skill visual própria, com calibração de contexto e inspeção rigorosa.
 
 Nenhuma Skill de terceiros está instalada. Ideias externas só entram depois de revisão, seleção e reescrita para o nosso contexto.

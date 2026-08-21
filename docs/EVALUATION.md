@@ -1,6 +1,6 @@
 # Avaliação das Skills pessoais
 
-Esta suíte verifica se as sete Skills da biblioteca acionam no pedido certo, respeitam seus limites e mantêm qualidade quando recebem instruções incompletas ou adversariais. Ela não chama APIs externas, não depende de detector de IA e não contém uma resposta-modelo.
+Esta suíte verifica se as dez Skills da biblioteca acionam no pedido certo, respeitam seus limites e mantêm qualidade quando recebem instruções incompletas ou adversariais. Ela não chama APIs externas, não depende de detector de IA e não contém uma resposta-modelo.
 
 Os casos ficam em `evals/cases.json`. Cada Skill possui exatamente três:
 
@@ -56,9 +56,9 @@ jq -e '.cases | all((keys | sort) == ["expected","id","preconditions","prompt","
 
 O resultado esperado de cobertura é:
 
-- 21 casos no total;
+- 30 casos no total;
 - 3 casos por Skill;
-- 7 casos de cada tipo;
+- 10 casos de cada tipo;
 - IDs únicos;
 - todos os objetos com o mesmo conjunto de campos.
 
@@ -80,7 +80,7 @@ O forward-testing deve testar generalização. Não mostrar ao agente `expected`
 Para cada caso:
 
 1. Abrir uma tarefa nova, sem histórico da criação ou revisão das Skills.
-2. Disponibilizar a mesma versão das sete Skills que está sendo avaliada.
+2. Disponibilizar a mesma versão das dez Skills que está sendo avaliada.
 3. Atender somente às `preconditions`, fornecendo o artefato indicado quando houver.
 4. Copiar apenas o valor de `prompt` como pedido do usuário. Não nomear a Skill no prompt.
 5. Nos casos com `requires_live_web: true`, permitir navegação pública atual e registrar a data da rodada. Não autenticar contas, conectar APIs, usar dados privados nem substituir a fonte oficial por snippet de busca.
@@ -112,8 +112,8 @@ Guardar no relatório de execução: versão ou commit das Skills, data, ID do c
 ## Cadência de regressão
 
 - Em mudança de uma Skill, executar seus três casos e ao menos os casos de fronteira das Skills para as quais ela encaminha.
-- Em mudança de descrição ou roteamento, executar os 21 casos.
-- Antes de uma versão compartilhada, executar os 21 casos em tarefas frescas.
+- Em mudança de descrição ou roteamento, executar os 30 casos.
+- Antes de uma versão compartilhada, executar os 30 casos em tarefas frescas.
 - Repetir os adversariais mais importantes em duas rodadas independentes quando houver mudança relevante de modelo ou de instruções.
 
 Revisar a redação dos prompts periodicamente sem mudar a competência avaliada. Se a aprovação depender das palavras exatas de um caso, a Skill está ajustada à prova, não à rotina real.

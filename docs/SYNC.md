@@ -6,7 +6,7 @@ O repositório remoto é a fonte de verdade. Não edite a cópia instalada pelo 
 
 Na máquina que precisa receber a versão nova, abra uma tarefa no Codex e cole:
 
-> Atualize o marketplace `thais-skills` a partir da branch `main` de `athaiscunha/thais-skills-library`, reinstale ou atualize o plugin `thais-skills-library`, valide as sete Skills e me avise quando eu puder abrir uma nova tarefa para usá-las. Não instale Skills de terceiros.
+> Atualize o marketplace `thais-skills` a partir da branch `main` de `athaiscunha/thais-skills-library`, reinstale ou atualize o plugin `thais-skills-library`, valide as dez Skills e me avise quando eu puder abrir uma nova tarefa para usá-las. Não instale Skills de terceiros.
 
 Depois da confirmação, abra uma tarefa nova. Skills e plugins são carregados no início da tarefa, por isso uma conversa que já estava aberta pode continuar usando a versão anterior.
 

@@ -18,7 +18,7 @@ O campo `version` de `plugins/thais-skills-library/.codex-plugin/plugin.json` us
 
 Exemplos: `1.0.1`, `1.1.0`, `2.0.0`.
 
-A versão `1.0.0` identifica o primeiro pacote estável com as sete Skills validadas. A versão deve ser atualizada no mesmo PR que muda o comportamento distribuído.
+A versão `1.0.0` identifica o primeiro pacote estável com as sete Skills originais validadas. A versão `1.1.0` incorpora `csc-campaign-360`, `csc-visual-design` e `visual-design`, totalizando dez. A versão deve ser atualizada no mesmo PR que muda o comportamento distribuído.
 
 ## Mensagens de commit
 

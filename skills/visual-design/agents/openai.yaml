@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Design Director"
+  short_description: "Direção de arte rigorosa para qualquer projeto"
+  default_prompt: "Use $visual-design para criar ou revisar esta entrega com direção de arte sofisticada, contexto apropriado e inspeção rigorosa."
