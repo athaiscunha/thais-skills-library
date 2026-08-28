@@ -1,6 +1,8 @@
 # Avaliação das Skills pessoais
 
-Esta suíte verifica se as sete Skills da biblioteca acionam no pedido certo, respeitam seus limites e mantêm qualidade quando recebem instruções incompletas ou adversariais. Ela não chama APIs externas, não depende de detector de IA e não contém uma resposta-modelo.
+Esta suíte verifica se as Skills canônicas da biblioteca acionam no pedido certo, respeitam seus limites e mantêm qualidade quando recebem instruções incompletas ou adversariais. Ela não chama APIs externas, não depende de detector de IA e não contém uma resposta-modelo.
+
+O plugin independente `seo-auditor-phd` possui uma suíte própria em `plugins/seo-auditor-phd/tests/` e artefatos de revisão em `plugins/seo-auditor-phd/evals/`. Esses arquivos complementam, mas não entram na contagem dos casos da biblioteca, atualmente 21.
 
 Os casos ficam em `evals/cases.json`. Cada Skill possui exatamente três:
 
@@ -56,13 +58,30 @@ jq -e '.cases | all((keys | sort) == ["expected","id","preconditions","prompt","
 
 O resultado esperado de cobertura é:
 
-- 21 casos no total;
+- exatamente 3 casos por Skill canônica, portanto `3 × número de Skills` no total;
 - 3 casos por Skill;
-- 7 casos de cada tipo;
+- a mesma quantidade de casos de cada tipo que o número de Skills canônicas;
 - IDs únicos;
 - todos os objetos com o mesmo conjunto de campos.
 
-Depois, revisar cada caso contra o `SKILL.md` correspondente:
+Além da suíte da biblioteca, execute:
+
+```bash
+python3 -m unittest discover -s plugins/seo-auditor-phd/tests -v
+```
+
+O teste do SEO Auditor deve confirmar a extração determinística de title, meta description, headings, canonical, robots, imagens, links, palavras e ocorrências da keyword na LP de exemplo. Em seguida, revise `plugins/seo-auditor-phd/evals/example-audit.md` contra `critical-review.md` para garantir que a saída continue específica, priorizada e explícita sobre os dados que não foram observados.
+
+`python3 evals/run_static_checks.py` também descobre todos os pacotes de `plugins/` e confere automaticamente se:
+
+- cada pasta de plugin possui manifesto válido e entrada de marketplace;
+- cada entrada aponta para `./plugins/<nome>` e possui políticas válidas;
+- nomes de pasta, manifesto e Skills coincidem;
+- versões seguem SemVer;
+- não existem plugins órfãos ou entradas sem pacote;
+- as validações específicas da biblioteca e do SEO Auditor continuam passando.
+
+Depois, revisar cada caso da biblioteca contra o `SKILL.md` correspondente:
 
 1. O pedido de ativação cabe integralmente na descrição da Skill?
 2. O caso de não acionamento pertence de fato a outra Skill ou exige falha segura?
@@ -80,7 +99,7 @@ O forward-testing deve testar generalização. Não mostrar ao agente `expected`
 Para cada caso:
 
 1. Abrir uma tarefa nova, sem histórico da criação ou revisão das Skills.
-2. Disponibilizar a mesma versão das sete Skills que está sendo avaliada.
+2. Disponibilizar a mesma versão de todas as Skills canônicas que está sendo avaliada.
 3. Atender somente às `preconditions`, fornecendo o artefato indicado quando houver.
 4. Copiar apenas o valor de `prompt` como pedido do usuário. Não nomear a Skill no prompt.
 5. Nos casos com `requires_live_web: true`, permitir navegação pública atual e registrar a data da rodada. Não autenticar contas, conectar APIs, usar dados privados nem substituir a fonte oficial por snippet de busca.
@@ -112,8 +131,8 @@ Guardar no relatório de execução: versão ou commit das Skills, data, ID do c
 ## Cadência de regressão
 
 - Em mudança de uma Skill, executar seus três casos e ao menos os casos de fronteira das Skills para as quais ela encaminha.
-- Em mudança de descrição ou roteamento, executar os 21 casos.
-- Antes de uma versão compartilhada, executar os 21 casos em tarefas frescas.
+- Em mudança de descrição ou roteamento, executar todos os casos da biblioteca.
+- Antes de uma versão compartilhada, executar todos os casos da biblioteca em tarefas frescas.
 - Repetir os adversariais mais importantes em duas rodadas independentes quando houver mudança relevante de modelo ou de instruções.
 
 Revisar a redação dos prompts periodicamente sem mudar a competência avaliada. Se a aprovação depender das palavras exatas de um caso, a Skill está ajustada à prova, não à rotina real.

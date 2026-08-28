@@ -1,0 +1,36 @@
+{
+  "name": "seo-auditor-phd",
+  "version": "0.1.0",
+  "description": "Auditoria SEO on-page crítica e baseada em evidências para páginas, landing pages e sites.",
+  "author": {
+    "name": "Thais Cunha",
+    "url": "https://github.com/athaiscunha"
+  },
+  "homepage": "https://github.com/athaiscunha/thais-skills-library/tree/main/plugins/seo-auditor-phd",
+  "repository": "https://github.com/athaiscunha/thais-skills-library",
+  "keywords": [
+    "seo",
+    "on-page",
+    "content-audit",
+    "geo",
+    "aeo"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SEO Auditor PhD",
+    "shortDescription": "Auditoria SEO priorizada e acionável",
+    "longDescription": "Audita intenção, keywords, conteúdo, metadados, arquitetura, técnica, E-E-A-T, CTR, GEO e AEO sem inventar métricas externas.",
+    "developerName": "Thaís",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Audite esta URL e priorize as correções por impacto e esforço.",
+      "Revise este texto para a palavra-chave principal sem keyword stuffing.",
+      "Compare estas páginas e investigue risco de canibalização."
+    ]
+  }
+}

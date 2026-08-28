@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Codex local installation metadata
+.codex-marketplace-install.json
+
+# Local work and secrets
+work/
+.env
+.env.*
+!.env.example
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*~

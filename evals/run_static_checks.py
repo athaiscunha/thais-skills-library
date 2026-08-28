@@ -8,7 +8,6 @@ import hashlib
 import re
 import subprocess
 import sys
-import tempfile
 from collections import Counter
 from pathlib import Path
 
@@ -16,8 +15,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_ROOT = ROOT / "skills"
 CASES_PATH = ROOT / "evals" / "cases.json"
+PLUGINS_ROOT = ROOT / "plugins"
+MARKETPLACE_PATH = ROOT / ".agents" / "plugins" / "marketplace.json"
 PLUGIN_ROOT = ROOT / "plugins" / "thais-skills-library"
+SEO_PLUGIN_ROOT = ROOT / "plugins" / "seo-auditor-phd"
 RESOURCE_PATTERN = re.compile(r"`((?:references|scripts|assets)/[^`]+)`")
+PLUGIN_NAME_PATTERN = re.compile(r"[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)*")
+SEMVER_PATTERN = re.compile(
+    r"\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?"
+)
 
 
 def parse_frontmatter(path: Path) -> tuple[dict[str, str], str]:
@@ -40,6 +46,130 @@ def parse_frontmatter(path: Path) -> tuple[dict[str, str], str]:
 def quoted_yaml_value(text: str, key: str) -> str | None:
     match = re.search(rf"^\s*{re.escape(key)}:\s*\"([^\"]*)\"\s*$", text, re.MULTILINE)
     return match.group(1) if match else None
+
+
+def check_marketplace_plugins() -> tuple[list[str], int]:
+    """Validate every marketplace entry and detect orphan plugin packages."""
+    errors: list[str] = []
+    try:
+        marketplace = json.loads(MARKETPLACE_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f"marketplace: arquivo inválido: {exc}"], 0
+
+    if marketplace.get("name") != "thais-skills":
+        errors.append("marketplace: name deve ser thais-skills")
+    display_name = marketplace.get("interface", {}).get("displayName")
+    if not isinstance(display_name, str) or not display_name.strip():
+        errors.append("marketplace: interface.displayName ausente")
+    entries = marketplace.get("plugins")
+    if not isinstance(entries, list) or not entries:
+        return errors + ["marketplace: plugins deve ser uma lista não vazia"], 0
+
+    marketplace_names: list[str] = []
+    for index, entry in enumerate(entries, start=1):
+        label = f"marketplace: entrada {index}"
+        if not isinstance(entry, dict):
+            errors.append(f"{label} deve ser um objeto")
+            continue
+        name = entry.get("name")
+        if not isinstance(name, str) or not PLUGIN_NAME_PATTERN.fullmatch(name):
+            errors.append(f"{label} possui name inválido")
+            continue
+        marketplace_names.append(name)
+        source = entry.get("source")
+        expected_path = f"./plugins/{name}"
+        if not isinstance(source, dict) or source.get("source") != "local":
+            errors.append(f"{name}: marketplace deve usar source local")
+        elif source.get("path") != expected_path:
+            errors.append(f"{name}: marketplace deve apontar para {expected_path}")
+        policy = entry.get("policy")
+        if not isinstance(policy, dict):
+            errors.append(f"{name}: policy ausente no marketplace")
+        else:
+            if policy.get("installation") not in {
+                "NOT_AVAILABLE",
+                "AVAILABLE",
+                "INSTALLED_BY_DEFAULT",
+            }:
+                errors.append(f"{name}: policy.installation inválida")
+            if policy.get("authentication") not in {"ON_INSTALL", "ON_USE"}:
+                errors.append(f"{name}: policy.authentication inválida")
+        if not isinstance(entry.get("category"), str) or not entry["category"].strip():
+            errors.append(f"{name}: category ausente no marketplace")
+
+        plugin_root = PLUGINS_ROOT / name
+        manifest_path = plugin_root / ".codex-plugin" / "plugin.json"
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"{name}: manifesto inválido: {exc}")
+            continue
+        if manifest.get("name") != name:
+            errors.append(f"{name}: name do manifesto não coincide com a pasta")
+        version = manifest.get("version")
+        if not isinstance(version, str) or not SEMVER_PATTERN.fullmatch(version):
+            errors.append(f"{name}: version não segue SemVer")
+        description = manifest.get("description")
+        if not isinstance(description, str) or not description.strip():
+            errors.append(f"{name}: description ausente no manifesto")
+        skills_path = manifest.get("skills")
+        if skills_path is not None:
+            if skills_path != "./skills/":
+                errors.append(f"{name}: skills deve usar o caminho ./skills/")
+            else:
+                bundled_skills = plugin_root / "skills"
+                skill_dirs = sorted(
+                    path for path in bundled_skills.iterdir()
+                    if path.is_dir() and (path / "SKILL.md").is_file()
+                ) if bundled_skills.is_dir() else []
+                if not skill_dirs:
+                    errors.append(f"{name}: manifesto declara Skills, mas nenhuma foi encontrada")
+                for skill_dir in skill_dirs:
+                    try:
+                        frontmatter, _ = parse_frontmatter(skill_dir / "SKILL.md")
+                    except ValueError as exc:
+                        errors.append(f"{name}/{skill_dir.name}: {exc}")
+                    else:
+                        if frontmatter.get("name") != skill_dir.name:
+                            errors.append(
+                                f"{name}/{skill_dir.name}: name da Skill não coincide com a pasta"
+                            )
+                    agents_path = skill_dir / "agents" / "openai.yaml"
+                    if agents_path.is_file():
+                        agents_text = agents_path.read_text(encoding="utf-8")
+                        prompt = quoted_yaml_value(agents_text, "default_prompt")
+                        if prompt is None or not prompt.strip():
+                            errors.append(
+                                f"{name}/{skill_dir.name}: default_prompt precisa ser preenchido"
+                            )
+                        elif f"${skill_dir.name}" in prompt or f"@{skill_dir.name}" in prompt:
+                            errors.append(
+                                f"{name}/{skill_dir.name}: default_prompt deve ser neutro, "
+                                "sem sintaxe de invocação"
+                            )
+
+    duplicates = sorted(
+        name for name, count in Counter(marketplace_names).items() if count > 1
+    )
+    if duplicates:
+        errors.append(f"marketplace: plugins duplicados: {', '.join(duplicates)}")
+    disk_names = {
+        path.name
+        for path in PLUGINS_ROOT.iterdir()
+        if path.is_dir() and (path / ".codex-plugin" / "plugin.json").is_file()
+    }
+    marketplace_name_set = set(marketplace_names)
+    missing_entries = sorted(disk_names - marketplace_name_set)
+    missing_packages = sorted(marketplace_name_set - disk_names)
+    if missing_entries:
+        errors.append(
+            "marketplace: plugins no disco sem entrada: " + ", ".join(missing_entries)
+        )
+    if missing_packages:
+        errors.append(
+            "marketplace: entradas sem pacote no disco: " + ", ".join(missing_packages)
+        )
+    return errors, len(disk_names)
 
 
 def check_skill(skill_dir: Path) -> tuple[list[str], list[str]]:
@@ -94,8 +224,10 @@ def check_skill(skill_dir: Path) -> tuple[list[str], list[str]]:
         agents_text = agents_path.read_text(encoding="utf-8")
         prompt = quoted_yaml_value(agents_text, "default_prompt")
         short_description = quoted_yaml_value(agents_text, "short_description")
-        if prompt is None or f"${prefix}" not in prompt:
-            errors.append(f"{prefix}: default_prompt precisa mencionar ${prefix}")
+        if prompt is None or not prompt.strip():
+            errors.append(f"{prefix}: default_prompt precisa ser preenchido")
+        elif f"${prefix}" in prompt or f"@{prefix}" in prompt:
+            errors.append(f"{prefix}: default_prompt deve ser neutro, sem sintaxe de invocação")
         if short_description is None or not 25 <= len(short_description) <= 64:
             errors.append(f"{prefix}: short_description deve ter entre 25 e 64 caracteres")
 
@@ -190,15 +322,14 @@ def check_paid_asset_auditor() -> list[str]:
         "Descrição\t20\t  texto   repetido  \n"
         "Título\t1\te\u0301\n"
     )
-    with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".tsv") as handle:
-        handle.write(sample)
-        handle.flush()
-        result = subprocess.run(
-            [sys.executable, str(script), handle.name],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
+    result = subprocess.run(
+        [sys.executable, "-X", "utf8", str(script)],
+        input=sample,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        check=False,
+    )
     expected_fragments = (
         "OK\tTítulo\t[10/10]",
         "ACIMA\tTítulo",
@@ -206,7 +337,11 @@ def check_paid_asset_auditor() -> list[str]:
         "OK\tTítulo\t[1/1]",
     )
     if result.returncode != 1 or any(fragment not in result.stdout for fragment in expected_fragments):
-        return ["csc-paid-media-copy: audit_assets.py falhou no autoteste"]
+        details = (result.stdout + result.stderr).strip().replace("\n", " | ")
+        return [
+            "csc-paid-media-copy: audit_assets.py falhou no autoteste "
+            f"(código {result.returncode}; saída: {details[-500:]})"
+        ]
     return []
 
 
@@ -221,21 +356,12 @@ def tree_hashes(root: Path) -> dict[str, str]:
 def check_plugin_bundle(skill_names: set[str]) -> list[str]:
     errors: list[str] = []
     manifest_path = PLUGIN_ROOT / ".codex-plugin" / "plugin.json"
-    marketplace_path = ROOT / ".agents" / "plugins" / "marketplace.json"
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         return [f"plugin: manifesto inválido: {exc}"]
     if manifest.get("name") != "thais-skills-library" or manifest.get("skills") != "./skills/":
         errors.append("plugin: identidade ou caminho de Skills inválido")
-    try:
-        marketplace = json.loads(marketplace_path.read_text(encoding="utf-8"))
-        entry = marketplace["plugins"][0]
-    except (OSError, json.JSONDecodeError, KeyError, IndexError, TypeError) as exc:
-        errors.append(f"plugin: marketplace inválido: {exc}")
-    else:
-        if marketplace.get("name") != "thais-skills" or entry.get("name") != "thais-skills-library":
-            errors.append("plugin: marketplace não aponta para o pacote esperado")
     bundled = PLUGIN_ROOT / "skills"
     bundled_names = {path.name for path in bundled.iterdir() if (path / "SKILL.md").is_file()}
     if bundled_names != skill_names:
@@ -246,11 +372,74 @@ def check_plugin_bundle(skill_names: set[str]) -> list[str]:
     return errors
 
 
+def check_seo_plugin() -> list[str]:
+    errors: list[str] = []
+    skill_root = SEO_PLUGIN_ROOT / "skills" / "seo-auditor-phd"
+
+    required_files = (
+        skill_root / "SKILL.md",
+        skill_root / "agents" / "openai.yaml",
+        skill_root / "references" / "audit-methodology.md",
+        skill_root / "references" / "data-acquisition.md",
+        skill_root / "references" / "report-contract.md",
+        skill_root / "scripts" / "analyze_onpage.py",
+        SEO_PLUGIN_ROOT / "tests" / "test_analyze_onpage.py",
+        SEO_PLUGIN_ROOT / "tests" / "fixtures" / "example-lp.html",
+        SEO_PLUGIN_ROOT / "evals" / "example-audit.md",
+        SEO_PLUGIN_ROOT / "evals" / "example-measurements.json",
+        SEO_PLUGIN_ROOT / "evals" / "critical-review.md",
+    )
+    for path in required_files:
+        if not path.is_file():
+            errors.append(f"seo-auditor-phd: arquivo obrigatório ausente: {path.relative_to(ROOT)}")
+
+    if (skill_root / "SKILL.md").is_file():
+        try:
+            frontmatter, _ = parse_frontmatter(skill_root / "SKILL.md")
+        except ValueError as exc:
+            errors.append(f"seo-auditor-phd: {exc}")
+        else:
+            if frontmatter.get("name") != "seo-auditor-phd":
+                errors.append("seo-auditor-phd: name da Skill não coincide com a pasta")
+
+    measurements_path = SEO_PLUGIN_ROOT / "evals" / "example-measurements.json"
+    if measurements_path.is_file():
+        try:
+            json.loads(measurements_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            errors.append(f"seo-auditor-phd: example-measurements.json inválido: {exc}")
+
+    if (SEO_PLUGIN_ROOT / "tests").is_dir():
+        result = subprocess.run(
+            [
+                sys.executable,
+                "-X",
+                "utf8",
+                "-m",
+                "unittest",
+                "discover",
+                "-s",
+                str(SEO_PLUGIN_ROOT / "tests"),
+                "-v",
+            ],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            check=False,
+        )
+        if result.returncode != 0:
+            details = (result.stdout + result.stderr).strip().replace("\n", " | ")
+            errors.append(f"seo-auditor-phd: testes falharam: {details[-500:]}")
+    return errors
+
+
 def main() -> int:
     skill_dirs = sorted(path for path in SKILLS_ROOT.iterdir() if (path / "SKILL.md").is_file())
     skill_names = {path.name for path in skill_dirs}
     errors: list[str] = []
     warnings: list[str] = []
+    marketplace_errors, plugin_count = check_marketplace_plugins()
+    errors.extend(marketplace_errors)
     for skill_dir in skill_dirs:
         skill_errors, skill_warnings = check_skill(skill_dir)
         errors.extend(skill_errors)
@@ -258,6 +447,7 @@ def main() -> int:
     errors.extend(check_cases(skill_names))
     errors.extend(check_paid_asset_auditor())
     errors.extend(check_plugin_bundle(skill_names))
+    errors.extend(check_seo_plugin())
 
     for warning in warnings:
         print(f"AVISO {warning}")
@@ -266,7 +456,10 @@ def main() -> int:
     if errors:
         print(f"FALHOU: {len(errors)} erro(s), {len(warnings)} aviso(s)")
         return 1
-    print(f"OK: {len(skill_dirs)} Skills, {len(warnings)} aviso(s), nenhum erro")
+    print(
+        f"OK: {len(skill_dirs)} Skills canônicas, {plugin_count} plugin(s), "
+        f"{len(warnings)} aviso(s), nenhum erro"
+    )
     return 0
 
 

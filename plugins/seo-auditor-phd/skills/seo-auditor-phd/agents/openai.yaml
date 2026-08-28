@@ -1,0 +1,6 @@
+interface:
+  display_name: "SEO Auditor PhD"
+  short_description: "Auditoria SEO crítica, priorizada e acionável"
+  default_prompt: "Audite esta página, explique os riscos de SEO e proponha correções concretas."
+policy:
+  allow_implicit_invocation: true

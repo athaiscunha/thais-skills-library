@@ -1,0 +1,295 @@
+{
+  "measurement_scope": {
+    "input_path": "tests\\fixtures\\example-lp.html",
+    "input_mode": "html",
+    "provided_url": "https://www.faculdadehorizonte.example/cursos/enfermagem",
+    "measured_from": "main element when present; otherwise visible body/text",
+    "not_measured": [
+      "search intent and funnel fit",
+      "search volume and keyword difficulty",
+      "rankings, traffic, CTR and conversions",
+      "SERP and competitors",
+      "actual indexation and crawl behavior",
+      "HTTP headers and redirect chain",
+      "rendered DOM when input is static HTML",
+      "Core Web Vitals and mobile behavior",
+      "sitewide cannibalization",
+      "content authorship or AI generation"
+    ]
+  },
+  "document": {
+    "title": "Seu futuro começa aqui | Faculdade Horizonte",
+    "title_characters": 44,
+    "meta_description": "Conheça nosso curso, descubra novas possibilidades e transforme seu futuro profissional.",
+    "meta_description_characters": 88,
+    "html_lang": "pt-BR",
+    "has_viewport_meta": false,
+    "canonical": [
+      "https://www.faculdadehorizonte.example/cursos/enfermagem"
+    ],
+    "robots_meta": [],
+    "hreflang": [],
+    "url_slug": "enfermagem"
+  },
+  "content": {
+    "word_count": 256,
+    "sentence_count": 17,
+    "paragraph_count": 6,
+    "average_words_per_sentence": 15.1,
+    "long_sentences_over_30_words": 0,
+    "long_paragraphs_over_120_words": 0,
+    "flesch_portuguese_approximation": 30.6,
+    "flesch_caveat": "Triagem aproximada por grupos vocálicos; revise exemplos no texto e não use como veredito.",
+    "first_paragraph": "O mercado muda todos os dias, e escolher uma formação é uma decisão importante. Aqui você encontra uma experiência completa, professores preparados e uma estrutura pensada para o seu sucesso. Venha construir uma trajetória de realização em uma instituição que acredita no seu potencial e está pronta para acompanhar cada passo."
+  },
+  "headings": {
+    "total": 4,
+    "counts_by_level": {
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "h4": 1,
+      "h5": 0,
+      "h6": 0
+    },
+    "items": [
+      {
+        "level": 1,
+        "text": "Transforme sua vocação em uma carreira que faz a diferença"
+      },
+      {
+        "level": 2,
+        "text": "Por que escolher o curso de enfermagem?"
+      },
+      {
+        "level": 4,
+        "text": "O que você aprende"
+      },
+      {
+        "level": 2,
+        "text": "Comece agora"
+      }
+    ],
+    "level_jumps": [
+      {
+        "from": "H2",
+        "from_text": "Por que escolher o curso de enfermagem?",
+        "to": "H4",
+        "to_text": "O que você aprende"
+      }
+    ],
+    "duplicate_texts_casefolded": []
+  },
+  "keywords": [
+    {
+      "phrase": "curso de enfermagem",
+      "phrase_token_count": 3,
+      "exact_occurrences_in_body": 5,
+      "occurrences_per_100_body_words": 1.953,
+      "keyword_token_footprint_percent": 5.859,
+      "starting_band_not_target": "1–3",
+      "zones": {
+        "title": 0,
+        "meta_description": 0,
+        "h1": 0,
+        "h2_h6": 1,
+        "first_paragraph": 0,
+        "first_150_words": 5,
+        "url_slug": 0
+      },
+      "body_quartiles_q1_to_q4": [
+        0,
+        5,
+        0,
+        0
+      ],
+      "distribution_caveat": "Contagem exata, sem flexões ou sinônimos. A faixa é ponto de partida editorial, não meta de densidade."
+    },
+    {
+      "phrase": "graduação em enfermagem",
+      "phrase_token_count": 3,
+      "exact_occurrences_in_body": 0,
+      "occurrences_per_100_body_words": 0.0,
+      "keyword_token_footprint_percent": 0.0,
+      "starting_band_not_target": "1–3",
+      "zones": {
+        "title": 0,
+        "meta_description": 0,
+        "h1": 0,
+        "h2_h6": 0,
+        "first_paragraph": 0,
+        "first_150_words": 0,
+        "url_slug": 0
+      },
+      "body_quartiles_q1_to_q4": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distribution_caveat": "Contagem exata, sem flexões ou sinônimos. A faixa é ponto de partida editorial, não meta de densidade."
+    },
+    {
+      "phrase": "faculdade de enfermagem",
+      "phrase_token_count": 3,
+      "exact_occurrences_in_body": 0,
+      "occurrences_per_100_body_words": 0.0,
+      "keyword_token_footprint_percent": 0.0,
+      "starting_band_not_target": "1–3",
+      "zones": {
+        "title": 0,
+        "meta_description": 0,
+        "h1": 0,
+        "h2_h6": 0,
+        "first_paragraph": 0,
+        "first_150_words": 0,
+        "url_slug": 0
+      },
+      "body_quartiles_q1_to_q4": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "distribution_caveat": "Contagem exata, sem flexões ou sinônimos. A faixa é ponto de partida editorial, não meta de densidade."
+    }
+  ],
+  "links": {
+    "total": 6,
+    "counts_by_kind": {
+      "internal": 6
+    },
+    "generic_anchors": [
+      {
+        "anchor": "Saiba mais",
+        "href": "/infraestrutura"
+      }
+    ],
+    "empty_anchor_hrefs": [],
+    "items": [
+      {
+        "href": "/",
+        "resolved": "https://www.faculdadehorizonte.example/",
+        "anchor": "Faculdade Horizonte",
+        "kind": "internal"
+      },
+      {
+        "href": "/cursos",
+        "resolved": "https://www.faculdadehorizonte.example/cursos",
+        "anchor": "Cursos",
+        "kind": "internal"
+      },
+      {
+        "href": "/inscricao",
+        "resolved": "https://www.faculdadehorizonte.example/inscricao",
+        "anchor": "Inscreva-se",
+        "kind": "internal"
+      },
+      {
+        "href": "/inscricao",
+        "resolved": "https://www.faculdadehorizonte.example/inscricao",
+        "anchor": "Quero me inscrever",
+        "kind": "internal"
+      },
+      {
+        "href": "/infraestrutura",
+        "resolved": "https://www.faculdadehorizonte.example/infraestrutura",
+        "anchor": "Saiba mais",
+        "kind": "internal"
+      },
+      {
+        "href": "/privacidade",
+        "resolved": "https://www.faculdadehorizonte.example/privacidade",
+        "anchor": "Política de privacidade",
+        "kind": "internal"
+      }
+    ]
+  },
+  "images": {
+    "total": 1,
+    "missing_alt_attribute": [
+      {
+        "src": "/images/laboratorio-enfermagem.jpg",
+        "alt": null,
+        "width": null,
+        "height": null,
+        "loading": null
+      }
+    ],
+    "empty_alt_review_if_decorative": [],
+    "without_explicit_width_or_height": [
+      {
+        "src": "/images/laboratorio-enfermagem.jpg",
+        "alt": null,
+        "width": null,
+        "height": null,
+        "loading": null
+      }
+    ],
+    "lazy_loaded": [],
+    "items": [
+      {
+        "src": "/images/laboratorio-enfermagem.jpg",
+        "alt": null,
+        "width": null,
+        "height": null,
+        "loading": null
+      }
+    ]
+  },
+  "structured_data": {
+    "jsonld_document_count": 0,
+    "types": [],
+    "parse_errors": []
+  },
+  "answer_formats": {
+    "question_heading_candidates": [
+      "Por que escolher o curso de enfermagem?",
+      "O que você aprende"
+    ],
+    "faqpage_schema_observed": false
+  },
+  "mechanical_review_flags": [
+    {
+      "area": "mobile",
+      "observation": "Meta viewport não observada no HTML.",
+      "why_review": "Confirme a renderização em dispositivos móveis; a ausência pode comprometer o layout responsivo."
+    },
+    {
+      "area": "headings",
+      "observation": "Saltos de nível observados.",
+      "why_review": "Confirme se a hierarquia comunica dependência lógica ou se níveis foram usados apenas para estilo."
+    },
+    {
+      "area": "keyword principal",
+      "observation": "Termo exato ausente de: title, h1.",
+      "why_review": "Revise intenção e naturalidade antes de inserir; zonas importam mais que uma taxa global."
+    },
+    {
+      "area": "introdução",
+      "observation": "Termo exato ausente do primeiro parágrafo.",
+      "why_review": "Confirme se a introdução identifica tema e oferta por variação inequívoca; não insira o termo se isso piorar a fluência."
+    },
+    {
+      "area": "keyword principal",
+      "observation": "Pegada do termo exato de 5.859% dos tokens do corpo.",
+      "why_review": "É apenas sinal mecânico para revisar repetições em contexto, não diagnóstico automático de stuffing."
+    },
+    {
+      "area": "keyword principal",
+      "observation": "Todas as 5 ocorrências estão no mesmo quartil do corpo.",
+      "why_review": "Concentração pode indicar distribuição artificial; leia os trechos antes de alterar."
+    },
+    {
+      "area": "imagens",
+      "observation": "1 imagem(ns) sem atributo alt.",
+      "why_review": "Defina alt contextual ou marque como decorativa conforme a função; não preencha com keyword por padrão."
+    },
+    {
+      "area": "links",
+      "observation": "1 âncora(s) genérica(s) observada(s).",
+      "why_review": "O contexto pode compensar, mas âncoras descritivas geralmente ajudam navegação e compreensão do destino."
+    }
+  ],
+  "interpretation_warning": "As flags são triagem mecânica. Valide intenção, contexto, função do elemento e evidência externa antes de classificar impacto."
+}
