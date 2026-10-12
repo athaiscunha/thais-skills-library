@@ -6,7 +6,7 @@ As cópias instaladas localmente são apenas cópias de trabalho. A versão ofic
 
 O marketplace **Skills da Thais** distribui dois pacotes independentes:
 
-- **Biblioteca de Skills da Thais** (`thais-skills-library`): reúne as sete Skills aprovadas da biblioteca;
+- **Biblioteca de Skills da Thais** (`thais-skills-library`): reúne as oito Skills da biblioteca, incluindo editais culturais;
 - **SEO Auditor PhD** (`seo-auditor-phd`): audita SEO on-page de páginas, LPs e sites, com diagnóstico priorizado, recomendações concretas e limites explícitos para dados não disponíveis.
 
 Para instalar ou atualizar os pacotes em outra máquina, veja [docs/INSTALLATION.md](docs/INSTALLATION.md).
@@ -33,7 +33,7 @@ Para instalar ou atualizar os pacotes em outra máquina, veja [docs/INSTALLATION
 │   ├── README.md
 │   ├── thais-skills-library/
 │   │   ├── .codex-plugin/plugin.json
-│   │   └── skills/           # pacote gerado das sete Skills
+│   │   └── skills/           # pacote gerado das Skills canônicas
 │   └── seo-auditor-phd/
 │       ├── .codex-plugin/plugin.json
 │       ├── skills/seo-auditor-phd/
@@ -105,9 +105,11 @@ Depois que o plugin estiver instalado e carregado na superfície compatível, as
 - [`csc-trends-radar`](skills/csc-trends-radar/): radar manual e atual de trends com evidência, validade, risco e adaptação institucional.
 - [`csc-social-content`](skills/csc-social-content/): criação e revisão de conteúdo orgânico, editorias recorrentes e briefings prontos para produção.
 
+- [`editais-cultura`](skills/editais-cultura/): pesquisa de oportunidades culturais, concepção de projetos orientada aos critérios e preparação de candidaturas até a inscrição, os recursos e a verificação do resultado, sem promessa de aprovação.
+
 ## Plugins disponíveis
 
-- [`thais-skills-library`](plugins/thais-skills-library/): pacote de distribuição das sete Skills canônicas listadas acima.
+- [`thais-skills-library`](plugins/thais-skills-library/): pacote de distribuição das oito Skills canônicas listadas acima.
 - [`seo-auditor-phd`](plugins/seo-auditor-phd/): auditoria SEO on-page de URL ou conteúdo colado, com análise semântica, técnica e editorial, score heurístico por dimensão, plano de ação por impacto/esforço e indicação clara dos dados externos necessários.
 
 Nenhuma Skill de terceiros está instalada. Ideias externas só entram depois de revisão, seleção e reescrita para o nosso contexto.

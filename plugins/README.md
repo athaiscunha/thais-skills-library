@@ -17,7 +17,7 @@ Um plugin pode incluir `references/`, `scripts/`, `assets/`, `agents/openai.yaml
 
 ## Pacotes atuais
 
-- `thais-skills-library`: bundle gerado das Skills canônicas de `skills/`; não editar a cópia interna manualmente.
+- `thais-skills-library`: bundle gerado das Skills canônicas de `skills/`, incluindo `editais-cultura` a partir da versão `1.1.0`; não editar a cópia interna manualmente.
 - `seo-auditor-phd`: plugin independente e autocontido, com analisador local, testes e avaliações próprios.
 
 ## Regra de publicação

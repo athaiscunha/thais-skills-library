@@ -1,0 +1,36 @@
+{
+  "versao": 1,
+  "regras": {
+    "fonte": "EXEMPLO FICTÍCIO: substituir por edital/retificação, data e itens que sustentam cada regra. Valores não representam nenhum programa real.",
+    "campos": {
+      "titulo": { "obrigatorio": true, "max_caracteres": 80 },
+      "resumo": { "obrigatorio": true, "min_caracteres": 30, "max_caracteres": 600 }
+    },
+    "orcamento": {
+      "fonte_solicitacao": "edital",
+      "teto_solicitacao": "2000.00",
+      "teto_total": "2500.00",
+      "categorias_permitidas": ["servicos", "materiais"],
+      "fontes_permitidas": ["edital", "recursos_proprios"],
+      "limites_categoria": { "materiais": "500.00" }
+    },
+    "anexos": [
+      { "id": "portfolio", "obrigatorio": true, "extensoes": [".pdf"], "max_bytes": 2000000 }
+    ]
+  },
+  "campos": {
+    "titulo": "Projeto fictício para demonstrar a validação",
+    "resumo": "Exemplo sem validade para inscrição: substituir todo o conteúdo pelos dados reais e pelas regras confirmadas."
+  },
+  "orcamento": {
+    "valor_solicitado": "2000.00",
+    "total_declarado": "2250.00",
+    "itens": [
+      { "id": "I01", "descricao": "Serviço fictício", "quantidade": "2", "valor_unitario": "875.00", "total_declarado": "1750.00", "categoria": "servicos", "fonte": "edital", "elegivel": true },
+      { "id": "I02", "descricao": "Material fictício", "quantidade": "1", "valor_unitario": "250.00", "total_declarado": "250.00", "categoria": "materiais", "fonte": "edital", "elegivel": true },
+      { "id": "I03", "descricao": "Material com recursos próprios", "quantidade": "1", "valor_unitario": "250.00", "categoria": "materiais", "fonte": "recursos_proprios", "elegivel": false }
+    ]
+  },
+  "anexos": [ { "id": "portfolio", "caminho": "anexos/portfolio.pdf" } ],
+  "pendencias": ["Substituir as regras fictícias e anexar o portfólio real antes de usar esta candidatura."]
+}

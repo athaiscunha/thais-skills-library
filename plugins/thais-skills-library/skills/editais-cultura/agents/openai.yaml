@@ -1,0 +1,8 @@
+interface:
+
+  display_name: "Editais de cultura"
+
+  short_description: "Crie projetos e inscrições culturais competitivas"
+
+  default_prompt: "Encontre oportunidades elegíveis, crie um projeto orientado aos critérios e prepare uma inscrição competitiva."
+

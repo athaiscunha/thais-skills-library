@@ -23,6 +23,8 @@ Exemplos de tags independentes: `thais-skills-library-v1.1.0` e `seo-auditor-phd
 
 A versão `1.0.0` identifica o primeiro pacote estável da biblioteca com as sete Skills validadas. O `seo-auditor-phd` começa em `0.1.0` enquanto sua interface e seus critérios de auditoria ainda podem evoluir. A versão do plugin afetado deve ser atualizada no mesmo PR que muda seu comportamento distribuído.
 
+A biblioteca `1.1.0` acrescenta `editais-cultura` e passa a distribuir oito Skills canônicas; o plugin SEO Auditor mantém sua versão independente.
+
 ## Mensagens de commit
 
 Use mensagens curtas no formato:
@@ -57,6 +59,6 @@ python3 evals/run_static_checks.py
 python3 -m unittest discover -s plugins/seo-auditor-phd/tests -v
 ```
 
-A sincronização do bundle é obrigatória apenas quando uma das sete Skills canônicas muda. A pasta de cada Skill ou plugin deve permanecer autocontida. Se uma alteração muda o modo de usá-la, registre a migração no próprio `SKILL.md` ou em `references/`.
+A sincronização do bundle é obrigatória apenas quando uma Skill canônica muda. A pasta de cada Skill ou plugin deve permanecer autocontida. Se uma alteração muda o modo de usá-la, registre a migração no próprio `SKILL.md` ou em `references/`.
 
 Para criar novos pacotes sem quebrar o marketplace, siga `docs/ADDING_SKILLS_AND_PLUGINS.md`. Cada plugin mantém sua própria versão; uma mudança em um pacote não exige incrementar os demais.
