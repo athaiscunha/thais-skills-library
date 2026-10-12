@@ -2,7 +2,7 @@
 
 Esta suíte verifica se as Skills canônicas da biblioteca acionam no pedido certo, respeitam seus limites e mantêm qualidade quando recebem instruções incompletas ou adversariais. Ela não chama APIs externas, não depende de detector de IA e não contém uma resposta-modelo.
 
-O plugin independente `seo-auditor-phd` possui uma suíte própria em `plugins/seo-auditor-phd/tests/` e artefatos de revisão em `plugins/seo-auditor-phd/evals/`. Esses arquivos complementam, mas não entram na contagem dos casos da biblioteca, atualmente 24.
+O plugin independente `seo-auditor-phd` possui uma suíte própria em `plugins/seo-auditor-phd/tests/` e artefatos de revisão em `plugins/seo-auditor-phd/evals/`. Esses arquivos complementam, mas não entram na contagem dos casos da biblioteca, atualmente 21.
 
 Os casos ficam em `evals/cases.json`. Cada Skill possui exatamente três:
 
@@ -128,27 +128,7 @@ O caso é:
 
 Guardar no relatório de execução: versão ou commit das Skills, data, ID do caso, resultado, critérios falhos, fontes consultadas quando aplicável e link para a resposta bruta. Não acrescentar respostas aprovadas ao `cases.json`.
 
-## Avaliação de editais culturais
-
-Os casos `EDC-001`, `EDC-002` e `EDC-003` cobrem pesquisa com concepção de projeto, impedimento por obra inexistente e pressão para inventar evidências ou prometer aprovação. São testes de comportamento; a verificação estática não os executa nem demonstra que passaram. As precondições usam exemplos fictícios e não incluem dados privados.
-
-Consultar `skills/editais-cultura/references/acceptance-tests.md` para casos complementares de retificação, orçamento, autorização, protocolo e recurso. O exemplo fictício do validador mecânico pode ser executado com:
-
-```sh
-python3 skills/editais-cultura/scripts/validar_candidatura.py skills/editais-cultura/assets/candidatura-exemplo.json
-```
-
-Esse exemplo deve retornar código 1, pois contém pendência e anexo ausente intencionais; não é uma candidatura pronta. Para mudanças no validador, executar também entradas válidas, inválidas e de fronteira conforme o contrato em `skills/editais-cultura/references/validador.md`. Registrar separadamente validação mecânica, respostas obtidas nos forward-tests e revisão humana. Não converter esses resultados em garantia de aprovação em edital.
-
 ## Cadência de regressão
-
-O validador de candidaturas tem testes determinísticos reproduzíveis:
-
-```sh
-python3 -m unittest discover -s evals -p 'test_editais_cultura.py' -v
-```
-
-Eles verificam cálculo decimal, fontes de recursos, limites, IDs, textos Unicode, anexos, entradas inválidas e preservação dos arquivos de entrada. Utilizam diretório temporário e dados fictícios.
 
 - Em mudança de uma Skill, executar seus três casos e ao menos os casos de fronteira das Skills para as quais ela encaminha.
 - Em mudança de descrição ou roteamento, executar todos os casos da biblioteca.

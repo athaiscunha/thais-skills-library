@@ -14,8 +14,6 @@ Este diretório contém somente Skills revisadas e prontas para uso.
 | [`csc-trends-radar`](csc-trends-radar/) | 0.2.0 | criação própria | Radar manual com evidência, histórico entre rodadas e encaminhamento para execução |
 | [`csc-social-content`](csc-social-content/) | 0.2.0 | criação própria | Conteúdo orgânico com bloqueio de ancoragem decorativa e briefing completo de produção |
 
-| [`editais-cultura`](editais-cultura/) | 1.0.0 | criação própria | Pesquisa de editais, concepção de projetos e candidaturas culturais com critérios, evidências, orçamento e controle de inscrição |
-
 ## Convenção de pastas
 
 Use nomes em minúsculas, no formato `kebab-case`:

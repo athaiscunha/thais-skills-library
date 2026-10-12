@@ -1,14 +1,12 @@
 # Sincronização entre as duas máquinas
 
-O repositório remoto é a fonte de verdade. Não edite a cópia instalada pelo Codex. Melhorias nas Skills da biblioteca nascem em `skills/`; melhorias no auditor SEO nascem em `plugins/seo-auditor-phd/`. Toda mudança passa por revisão e chega à branch `main` antes de ser sincronizada nas máquinas.
+O repositório remoto é a fonte de verdade. Não edite a cópia instalada pelo Codex. Melhorias nas sete Skills da biblioteca nascem em `skills/`; melhorias no auditor SEO nascem em `plugins/seo-auditor-phd/`. Toda mudança passa por revisão e chega à branch `main` antes de ser sincronizada nas máquinas.
 
 ## Atualizar uma máquina
 
 Na máquina que precisa receber a versão nova, abra uma tarefa no Codex e cole:
 
-> Atualize o marketplace `thais-skills` a partir da branch `main` de `athaiscunha/thais-skills-library`, reinstale ou atualize os plugins `thais-skills-library` e `seo-auditor-phd`, valide as nove Skills e me avise quando eu puder abrir uma nova tarefa para usá-las. Não instale Skills de terceiros.
-
-A versão `1.1.0` da biblioteca acrescenta `editais-cultura`; atualizar esse pacote é suficiente para receber a nova Skill, sem reinstalar o auditor SEO quando ele não mudou.
+> Atualize o marketplace `thais-skills` a partir da branch `main` de `athaiscunha/thais-skills-library`, reinstale ou atualize os plugins `thais-skills-library` e `seo-auditor-phd`, valide as oito Skills e me avise quando eu puder abrir uma nova tarefa para usá-las. Não instale Skills de terceiros.
 
 Depois da confirmação, abra uma tarefa nova. Skills e plugins são carregados no início da tarefa, por isso uma conversa que já estava aberta pode continuar usando a versão anterior.
 
@@ -22,7 +20,7 @@ codex plugin add seo-auditor-phd@thais-skills
 
 Como o repositório é público, a instalação não depende de autenticação para leitura. O marketplace do repositório continua usando `source: local` porque o caminho do plugin é relativo à cópia instalada do próprio marketplace.
 
-## Ao melhorar uma Skill da biblioteca
+## Ao melhorar uma das sete Skills da biblioteca
 
 1. Edite somente a versão canônica em `skills/<nome-da-skill>/`.
 2. Gere novamente o pacote instalável:

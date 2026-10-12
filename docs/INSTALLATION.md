@@ -2,7 +2,7 @@
 
 O caminho recomendado é adicionar o marketplace público `thais-skills` uma única vez e escolher quais pacotes instalar. O marketplace oferece:
 
-1. `thais-skills-library`: as oito Skills da biblioteca, incluindo editais culturais;
+1. `thais-skills-library`: as sete Skills aprovadas da biblioteca;
 2. `seo-auditor-phd`: a Skill especialista em auditoria SEO on-page.
 
 Os dois pacotes são independentes e não incluem conectores, MCPs, automações ou credenciais. É possível instalar apenas um deles ou ambos.
@@ -11,9 +11,9 @@ Os dois pacotes são independentes e não incluem conectores, MCPs, automações
 
 Na outra máquina, abra uma tarefa nova no Codex e cole este pedido para instalar os dois pacotes:
 
-> Adicione e valide o marketplace do repositório público `athaiscunha/thais-skills-library`, usando a branch `main`. Instale os plugins `thais-skills-library` e `seo-auditor-phd` do marketplace `thais-skills`. Confirme as versões instaladas e oriente a abertura de uma nova tarefa para carregar as nove Skills. Não instale Skills de terceiros e não altere o conteúdo dos pacotes.
+> Adicione e valide o marketplace do repositório público `athaiscunha/thais-skills-library`, usando a branch `main`. Instale os plugins `thais-skills-library` e `seo-auditor-phd` do marketplace `thais-skills`. Confirme as versões instaladas e oriente a abertura de uma nova tarefa para carregar as oito Skills. Não instale Skills de terceiros e não altere o conteúdo dos pacotes.
 
-O Codex deve fazer a instalação e devolver uma confirmação com os nove nomes. Você não precisa copiar pasta por pasta.
+O Codex deve fazer a instalação e devolver uma confirmação com os oito nomes. Você não precisa copiar pasta por pasta.
 
 ## O que será instalado com os dois pacotes
 
@@ -24,23 +24,11 @@ O Codex deve fazer a instalação e devolver uma confirmação com os nove nomes
 5. `csc-seo-blog`
 6. `csc-trends-radar`
 7. `csc-social-content`
-8. `editais-cultura`
-9. `seo-auditor-phd`
+8. `seo-auditor-phd`
 
 Se você quiser somente o auditor SEO, peça:
 
 > Adicione o marketplace do repositório público `athaiscunha/thais-skills-library`, na branch `main`, e instale apenas `seo-auditor-phd@thais-skills`. Valide a instalação e me avise quando eu puder abrir uma nova tarefa para usar a Skill.
-
-## Usar a Skill de editais culturais
-
-A versão `1.1.0` de `thais-skills-library` inclui `editais-cultura`. Para atualizar somente esse pacote, execute:
-
-```sh
-codex plugin marketplace upgrade thais-skills
-codex plugin add thais-skills-library@thais-skills
-```
-
-Abra uma tarefa nova e peça: “Pesquise oportunidades culturais atuais em Curitiba, no Paraná e em chamadas nacionais. Podemos criar um projeto para o edital; priorize elegibilidade, critérios demonstráveis e execução viável.” A Skill também pode ser acionada no Codex com `$editais-cultura`. Criar ou instalar a Skill não inscreve projetos nem autoriza declarações e envios em nome de proponentes.
 
 ## Verificação final
 
@@ -48,7 +36,7 @@ Depois da instalação, feche a tarefa usada para instalar e abra uma nova. Skil
 
 No Codex, peça:
 
-> Liste as Skills instaladas pelo marketplace Skills da Thais e confirme que são nove: as oito da biblioteca e o SEO Auditor PhD.
+> Liste as Skills instaladas pelo marketplace Skills da Thais e confirme que são oito: as sete da biblioteca e o SEO Auditor PhD.
 
 Você também pode testar uma Skill explicitamente, por exemplo:
 
@@ -76,9 +64,9 @@ codex plugin add seo-auditor-phd@thais-skills
 
 O marketplace versionado no repositório usa `source: local` com caminhos relativos dentro de `./plugins/`. Isso é intencional: depois que o marketplace do repositório é adicionado, cada plugin é resolvido dentro da cópia desse marketplace.
 
-## Plano B: instalação individual das Skills da biblioteca
+## Plano B: instalação individual das sete Skills
 
-Se uma superfície ainda não oferecer suporte ao plugin/marketplace desse repositório, instale as pastas desejadas de `skills/` individualmente a partir do mesmo repositório. Esse plano mantém o GitHub como fonte de verdade, mas exige instalar as Skills uma por uma. Para o `seo-auditor-phd`, prefira o pacote completo em `plugins/seo-auditor-phd`, pois ele inclui referências, analisador, testes e avaliações que fazem parte da entrega.
+Se uma superfície ainda não oferecer suporte ao plugin/marketplace desse repositório, instale as sete pastas de `skills/` individualmente a partir do mesmo repositório. Esse plano mantém o GitHub como fonte de verdade, mas exige instalar as Skills uma por uma. Para o `seo-auditor-phd`, prefira o pacote completo em `plugins/seo-auditor-phd`, pois ele inclui referências, analisador, testes e avaliações que fazem parte da entrega.
 
 ## Observação sobre ChatGPT e Codex
 
